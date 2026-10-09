@@ -33,6 +33,9 @@ Never write outreach before the target is defined. Always run `jp-b2b-targeting`
 - Country landing page + PDF catalogue in local language.
 - Trade-fair and marketplace (Amazon Business, Ankorstore, Faire-type) listings as lead sources.
 
+## Revenue target
+Current goal: **€15,000–30,000/month**. See `revenue-plan.md` for funnel maths, market order and the 30-day plan.
+
 ## Output format when asked for a plan
 Goal → segments (table) → offer → channel sequence + timeline → copy (via channel skills) → KPIs/targets → compliance checks → next 7 days' actions.
 
