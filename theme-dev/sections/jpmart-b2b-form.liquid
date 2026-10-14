@@ -1,7 +1,7 @@
 {%- comment -%}
-  JP MART B2B wholesale application (public lead capture). Dev copy of live v10 section, extended.
-  Uses native Shopify contact form: email notification + customer record tagged b2b-inquiry (lead list in Admin > Customers).
-  No prices are rendered here. Texts: pipe-separated, index order below.
+  JP MART B2B account application (public lead capture). Extended dev version of the v10 section.
+  Native Shopify contact form: email notification + customer record tagged lead-new (pipeline tags: lead-new > lead-verified > lead-approved > lead-quotation > lead-paid).
+  Tags set here NEVER grant wholesale access. No prices rendered. Add a language: add a when-branch below.
 {%- endcomment -%}
 {%- case request.locale.iso_code -%}
   {%- when 'en' -%}
@@ -14,117 +14,75 @@
 {%- assign countries = 'Austria|Belgium|Bulgaria|Croatia|Cyprus|Czechia|Denmark|Estonia|Finland|France|Germany|Greece|Hungary|Ireland|Italy|Latvia|Lithuania|Luxembourg|Malta|Netherlands|Poland|Portugal|Romania|Slovakia|Slovenia|Spain|Sweden' | split: '|' -%}
 {%- assign brands = 'Dabur|Vatika|Himalaya|Sesa|Vicco|Organic India|Indian grocery|Other' | split: '|' -%}
 
+{{ 'jpmart-b2b.css' | asset_url | stylesheet_tag }}
 <div class="jpb2b" id="b2b-form">
   <h2 class="jpb2b__title">{{ t[0] }}</h2>
-  {%- form 'contact', id: 'jpm-b2b-contact', class: 'jpb2b__form' -%}
-    {%- if form.posted_successfully? -%}
-      <p class="jpb2b__ok" role="status">✅ {{ t[19] }}</p>
-    {%- else -%}
-      {%- if form.errors -%}<div class="jpb2b__err" role="alert">{{ form.errors | default_errors }}</div>{%- endif -%}
-      <input type="hidden" name="contact[Typ zgłoszenia]" value="HURT B2B – nowe zapytanie">
-      <input type="hidden" name="contact[tags]" value="b2b-inquiry, lang-{{ request.locale.iso_code }}">
+  <p class="jpb2b__ok" id="jpb2b-ok" role="status" hidden>✅ {{ t[19] }}</p>
+  {%- assign rt_apply = request.path | append: '?sent=apply#b2b-form' -%}
+  {%- form 'contact', id: 'jpm-b2b-contact', class: 'jpb2b__form', return_to: rt_apply -%}
+    {%- if form.errors -%}<div class="jpb2b__err" role="alert">{{ form.errors | default_errors }}</div>{%- endif -%}
+    <div id="jpb2b-fields">
+      <input type="hidden" name="contact[Typ zgłoszenia]" value="HURT B2B – nowe konto">
+      <input type="hidden" name="contact[tags]" value="lead-new, account-application, lead-lang-{{ request.locale.iso_code }}">
       <input type="hidden" name="contact[Język strony]" value="{{ request.locale.iso_code }}">
       <input type="hidden" name="contact[Pipeline]" value="New Inquiry">
       <input type="hidden" name="contact[UTM]" id="jpb2b-utm" value="">
       <input type="hidden" name="contact[Landing / referrer]" id="jpb2b-ref" value="">
+      <div class="jpb2b__hp" aria-hidden="true"><label>Website2<input type="text" name="contact[Pole kontrolne]" tabindex="-1" autocomplete="off"></label></div>
       <div class="jpb2b__grid">
-        <label>{{ t[1] }} *<input type="text" name="contact[name]" required autocomplete="name"></label>
-        <label>{{ t[2] }} *<input type="email" name="contact[email]" required autocomplete="email"></label>
-        <label>{{ t[3] }} *<input type="tel" name="contact[phone]" required autocomplete="tel"></label>
-        <label>{{ t[4] }} *<input type="text" name="contact[Firma]" required autocomplete="organization"></label>
-        <label>{{ t[5] }} *<input type="text" name="contact[NIP / VAT UE]" required placeholder="DE123456789"></label>
-        <label>{{ t[6] }} *
-          <select name="contact[Kraj]" required>
-            <option value="">{{ t[24] }}</option>
-            {%- for c in countries -%}<option>{{ c }}</option>{%- endfor -%}
-          </select>
-        </label>
-        <label>{{ t[21] }}<input type="url" name="contact[Strona www]" placeholder="https://" autocomplete="url"></label>
-        <label>{{ t[7] }} *<input type="text" name="contact[Adres firmy]" required autocomplete="street-address"></label>
-        <label class="jpb2b__full">{{ t[8] }} *
-          <select name="contact[Rodzaj działalności]" required>
-            <option value="">—</option>
-            {%- for i in (9..15) -%}<option>{{ t[i] }}</option>{%- endfor -%}
-          </select>
-        </label>
-        <fieldset class="jpb2b__full jpb2b__brands">
-          <legend>{{ t[22] }}</legend>
-          {%- for b in brands -%}
-            <label class="jpb2b__chip"><input type="checkbox" name="contact[Marki: {{ b }}]" value="TAK"> {{ b }}</label>
-          {%- endfor -%}
-        </fieldset>
-        <label class="jpb2b__full">{{ t[23] }}<input type="text" name="contact[Szacowana ilość]"></label>
-        <label class="jpb2b__full">{{ t[16] }}<textarea name="contact[body]" rows="4"></textarea></label>
-        <label class="jpb2b__check jpb2b__full"><input type="checkbox" name="contact[Potwierdzenie firmy]" value="TAK" required> {{ t[17] }} *</label>
-        <label class="jpb2b__check jpb2b__full"><input type="checkbox" name="contact[Zgoda RODO]" value="TAK" required> <span>{{ t[25] }} <a href="{{ routes.privacy_policy_url }}" target="_blank" rel="noopener">{{ t[26] }}</a> {{ t[27] }} *</span></label>
-      </div>
-      <p class="jpb2b__note">{{ t[20] }}</p>
-      <button type="submit" class="jpb2b__btn">{{ t[18] }}</button>
-    {%- endif -%}
+          <label>{{ t[1] }} *<input type="text" name="contact[name]" required autocomplete="name"></label>
+          <label>{{ t[2] }} *<input type="email" name="contact[email]" required autocomplete="email"></label>
+          <label>{{ t[3] }} *<input type="tel" name="contact[phone]" required autocomplete="tel"></label>
+          <label>{{ t[4] }} *<input type="text" name="contact[Firma]" required autocomplete="organization"></label>
+          <label>{{ t[5] }} *<input type="text" name="contact[NIP / VAT UE]" required placeholder="DE123456789"></label>
+          <label>{{ t[6] }} *
+            <select name="contact[Kraj]" required>
+              <option value="">{{ t[24] }}</option>
+              {%- for c in countries -%}<option>{{ c }}</option>{%- endfor -%}
+            </select>
+          </label>
+          <label>{{ t[21] }}<input type="url" name="contact[Strona www]" placeholder="https://" autocomplete="url"></label>
+          <label>{{ t[7] }} *<input type="text" name="contact[Adres firmy]" required autocomplete="street-address"></label>
+          <label class="jpb2b__full">{{ t[8] }} *
+            <select name="contact[Rodzaj działalności]" required>
+              <option value="">—</option>
+              {%- for i in (9..15) -%}<option>{{ t[i] }}</option>{%- endfor -%}
+            </select>
+          </label>
+          <fieldset class="jpb2b__full jpb2b__brands">
+            <legend>{{ t[22] }}</legend>
+            {%- for b in brands -%}
+              <label class="jpb2b__chip"><input type="checkbox" name="contact[Marki: {{ b }}]" value="TAK"> {{ b }}</label>
+            {%- endfor -%}
+          </fieldset>
+          <label class="jpb2b__full">{{ t[23] }}<input type="text" name="contact[Szacowana ilość]"></label>
+          <label class="jpb2b__full">{{ t[16] }}<textarea name="contact[body]" rows="4"></textarea></label>
+          <label class="jpb2b__check jpb2b__full"><input type="checkbox" name="contact[Potwierdzenie firmy]" value="TAK" required> {{ t[17] }} *</label>
+          <label class="jpb2b__check jpb2b__full"><input type="checkbox" name="contact[Zgoda RODO]" value="TAK" required> <span>{{ t[25] }} <a href="{{ routes.privacy_policy_url }}" target="_blank" rel="noopener">{{ t[26] }}</a> {{ t[27] }} *</span></label>
+        </div>
+        <p class="jpb2b__note">{{ t[20] }}</p>
+        <button type="submit" class="jpb2b__btn">{{ t[18] }}</button>
+    </div>
   {%- endform -%}
 </div>
-
 <script>
   (function () {
     try {
       var p = new URLSearchParams(location.search), u = [];
-      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid'].forEach(function (k) {
-        if (p.get(k)) u.push(k + '=' + p.get(k));
-      });
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid'].forEach(function (k) { if (p.get(k)) u.push(k + '=' + p.get(k)); });
       if (u.length) sessionStorage.setItem('jpb2b_utm', u.join('&'));
       if (!sessionStorage.getItem('jpb2b_ref')) sessionStorage.setItem('jpb2b_ref', (document.referrer || 'direct') + ' | ' + location.pathname);
-      var a = document.getElementById('jpb2b-utm'), b = document.getElementById('jpb2b-ref');
-      if (a) a.value = sessionStorage.getItem('jpb2b_utm') || '';
-      if (b) b.value = sessionStorage.getItem('jpb2b_ref') || '';
+      document.getElementById('jpb2b-utm').value = sessionStorage.getItem('jpb2b_utm') || '';
+      document.getElementById('jpb2b-ref').value = sessionStorage.getItem('jpb2b_ref') || '';
+      if (p.get('sent') === 'apply') {
+        document.getElementById('jpb2b-ok').hidden = false; document.getElementById('jpb2b-fields').hidden = true;
+        if (window.gtag) gtag('event', 'generate_lead', { event_category: 'wholesale_apply' });
+        if (window.fbq) fbq('track', 'Lead');
+        if (window.Shopify && Shopify.analytics && Shopify.analytics.publish) Shopify.analytics.publish('wholesale_apply_submitted', {});
+      }
     } catch (e) {}
   })();
 </script>
-
-<style>
-  main[data-template*="b2b"] .jpb-hero { padding: 26px 28px; margin: 4px 0 28px; background: linear-gradient(135deg, #173f2d 0%, #245c43 100%); border-radius: 18px; color: #fff; }
-  main[data-template*="b2b"] .jpb-hero p { color: #fff; margin: 0 0 14px; font-size: 1.1rem; line-height: 1.55; max-width: 62ch; }
-  main[data-template*="b2b"] .jpb-hero strong { color: #fbe3a6; }
-  main[data-template*="b2b"] a.jpb-cta { display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 10px; background: #c8922f; color: #fff !important; font-weight: 700; text-decoration: none; font-size: 1rem; }
-  main[data-template*="b2b"] a.jpb-cta:hover { background: #a9761f; }
-  main[data-template*="b2b"] h2 { color: #173f2d; margin-top: 34px; }
-  main[data-template*="b2b"] .jpb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 14px 0 8px; }
-  main[data-template*="b2b"] .jpb-card { padding: 18px; background: #fff; border: 1px solid #e6dfd0; border-radius: 14px; }
-  main[data-template*="b2b"] .jpb-card h3 { margin: 0 0 6px; font-size: 1.05rem; color: #173f2d; }
-  main[data-template*="b2b"] .jpb-card p { margin: 0; font-size: .92rem; color: #4a554f; line-height: 1.5; }
-  main[data-template*="b2b"] ol.jpb-steps { counter-reset: s; list-style: none; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-  main[data-template*="b2b"] ol.jpb-steps li { counter-increment: s; position: relative; padding: 44px 16px 16px; background: #fbf1dc; border-radius: 14px; font-size: .92rem; line-height: 1.45; }
-  main[data-template*="b2b"] ol.jpb-steps li::before { content: counter(s); position: absolute; top: 12px; left: 16px; width: 26px; height: 26px; border-radius: 50%; background: #173f2d; color: #fff; font-weight: 700; display: grid; place-items: center; font-size: .85rem; }
-  main[data-template*="b2b"] table.jpb-table { width: 100%; max-width: 640px; border-collapse: collapse; background: #fff; border: 1px solid #e6dfd0; border-radius: 12px; overflow: hidden; }
-  main[data-template*="b2b"] table.jpb-table td { padding: 12px 16px; border-bottom: 1px solid #efe9dd; }
-  main[data-template*="b2b"] table.jpb-table td:first-child { color: #5b6660; width: 45%; }
-  .jpb2b { max-width: 760px; margin: 12px auto 72px; padding: 28px; background: #fff; border: 2px solid #173f2d; border-radius: 18px; scroll-margin-top: 120px; }
-  .jpb2b__title { margin: 0 0 18px; color: #173f2d; font-size: 1.6rem; }
-  .jpb2b__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
-  .jpb2b__full { grid-column: 1 / -1; }
-  .jpb2b label { display: flex; flex-direction: column; gap: 6px; font-size: .9rem; font-weight: 600; color: #1f2a24; }
-  .jpb2b input[type="text"], .jpb2b input[type="email"], .jpb2b input[type="tel"], .jpb2b input[type="url"], .jpb2b select, .jpb2b textarea { font: inherit; font-weight: 400; font-size: 16px; padding: 12px 14px; border: 1px solid #d9d2c3; border-radius: 10px; background: #fbf8f2; color: #1f2a24; }
-  .jpb2b input:focus, .jpb2b select:focus, .jpb2b textarea:focus { outline: none; border-color: #173f2d; box-shadow: 0 0 0 3px rgba(23,63,45,.12); }
-  .jpb2b .jpb2b__check { flex-direction: row; align-items: flex-start; gap: 10px; font-weight: 500; }
-  .jpb2b__check input { margin-top: 3px; width: 18px; height: 18px; accent-color: #173f2d; }
-  .jpb2b__brands { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-  .jpb2b__brands legend { font-size: .9rem; font-weight: 600; margin-bottom: 8px; padding: 0; }
-  .jpb2b .jpb2b__chip { flex-direction: row; align-items: center; gap: 6px; padding: 8px 12px; border: 1px solid #d9d2c3; border-radius: 999px; background: #fbf8f2; font-weight: 500; }
-  .jpb2b__note { font-size: .82rem; color: #5b6660; margin: 14px 0; }
-  .jpb2b__btn { min-height: 54px; padding: 0 30px; border: 0; border-radius: 10px; background: #c8922f; color: #fff; font-weight: 700; font-size: 1.05rem; cursor: pointer; }
-  .jpb2b__btn:hover { background: #a9761f; }
-  .jpb2b__ok { padding: 16px; background: #eef3ea; border-radius: 10px; color: #173f2d; font-weight: 600; margin: 0; }
-  .jpb2b__err { padding: 12px 16px; background: #fdecea; border-radius: 10px; color: #8a1c14; margin-bottom: 14px; }
-  @media (max-width: 900px) {
-    main[data-template*="b2b"] .jpb-grid { grid-template-columns: 1fr 1fr; }
-    main[data-template*="b2b"] ol.jpb-steps { grid-template-columns: 1fr 1fr; }
-  }
-  @media (max-width: 640px) {
-    .jpb2b { padding: 18px; margin: 0 12px 48px; }
-    .jpb2b__grid { grid-template-columns: 1fr; }
-    main[data-template*="b2b"] .jpb-grid, main[data-template*="b2b"] ol.jpb-steps { grid-template-columns: 1fr; }
-    main[data-template*="b2b"] .jpb-hero { padding: 20px; }
-  }
-</style>
 
 {% schema %}
 { "name": "JP MART – formularz B2B", "settings": [], "presets": [{ "name": "JP MART – formularz B2B" }] }

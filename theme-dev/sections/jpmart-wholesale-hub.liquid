@@ -1,0 +1,136 @@
+{%- comment -%}
+  JP MART European Wholesale Hub (dev). Brands, trust points, product-interest catalog (NO prices rendered) and quote form.
+  Add a language: add a {% when 'xx' %} branch below (and in sections/jpmart-b2b-form.liquid). Falls back to Polish.
+  Tags: lead-new, quote-request, lead-lang-xx. Never grants wholesale access.
+{%- endcomment -%}
+{{ 'jpmart-b2b.css' | asset_url | stylesheet_tag }}
+{%- case request.locale.iso_code -%}
+  {%- when 'en' -%}
+    {%- assign t = 'Apply for B2B account|Request a wholesale quote|Brands we supply|Indian & Ayurvedic cosmetics and groceries from our warehouse in Poland. Availability is confirmed per quote.|Why order from JP MART|Shipped from our warehouse in Poland (EU stock, no customs from India)|We ship to businesses across the EU – delivery cost is confirmed in your quote|Net wholesale prices in EUR are shared after your business account is approved|Invoice and VAT treatment depend on your country and a valid VAT ID (checked in VIES)|Shop by category|Herbal toothpastes|Hair care|Dabur & Vatika|Product-interest catalog|Search products and add the ones you want quoted. No prices are shown here – wholesale prices are shared after approval. Other Indian brands on request.|Search product or brand…|All brands|Add to quote|Qty|Selected products|No product selected yet.|No products found.|Request a wholesale quote|Tell us what you need. We reply with availability, prices, carton quantities and delivery cost.|Contact person|Business email|Phone|Company name|VAT ID (EU VAT number)|Country|Select country|Company website|I have read the|privacy policy|and agree that JP MART may contact me about this enquiry.|I confirm that I am requesting on behalf of a registered company.|Send quote request|Thank you! We received your quote request and will reply to your business email.|Fields marked * are required.|Please select at least one product or describe what you need.|Looking for retail prices? Visit our retail store.|Go to retail store|Other products, quantities or message|Reference: JP MART wholesale price list 30.09.2026 – prices shared only with approved business customers.' | split: '|' -%}
+  {%- when 'de' -%}
+    {%- assign t = 'B2B-Konto beantragen|Großhandelsangebot anfragen|Unsere Marken|Indische & ayurvedische Kosmetik und Lebensmittel aus unserem Lager in Polen. Die Verfügbarkeit bestätigen wir pro Angebot.|Warum JP MART|Versand aus unserem Lager in Polen (EU-Bestand, kein Zoll aus Indien)|Wir liefern an Unternehmen in der gesamten EU – die Versandkosten nennen wir im Angebot|Netto-Großhandelspreise in EUR erhalten Sie nach Freischaltung Ihres Geschäftskontos|Rechnung und MwSt. hängen von Ihrem Land und einer gültigen USt-IdNr. ab (Prüfung in VIES)|Nach Kategorie|Kräuterzahnpasta|Haarpflege|Dabur & Vatika|Produkt-Interessenkatalog|Produkte suchen und für ein Angebot auswählen. Hier werden keine Preise angezeigt – Großhandelspreise erhalten Sie nach Freischaltung. Weitere indische Marken auf Anfrage.|Produkt oder Marke suchen…|Alle Marken|Zum Angebot|Menge|Ausgewählte Produkte|Noch kein Produkt ausgewählt.|Keine Produkte gefunden.|Großhandelsangebot anfragen|Sagen Sie uns, was Sie brauchen. Wir antworten mit Verfügbarkeit, Preisen, Kartongrößen und Versandkosten.|Ansprechpartner|Geschäftliche E-Mail|Telefon|Firmenname|USt-IdNr. (EU)|Land|Land auswählen|Website des Unternehmens|Ich habe die|Datenschutzerklärung|gelesen und bin damit einverstanden, dass JP MART mich zu dieser Anfrage kontaktiert.|Ich bestätige, dass ich im Namen eines eingetragenen Unternehmens anfrage.|Angebotsanfrage senden|Vielen Dank! Wir haben Ihre Angebotsanfrage erhalten und antworten an Ihre Geschäfts-E-Mail.|Mit * markierte Felder sind Pflichtfelder.|Bitte wählen Sie mindestens ein Produkt aus oder beschreiben Sie Ihren Bedarf.|Einzelhandelspreise gesucht? Besuchen Sie unseren Shop.|Zum Online-Shop|Weitere Produkte, Mengen oder Nachricht|Referenz: JP MART Großhandelspreisliste 30.09.2026 – Preise nur für freigeschaltete Geschäftskunden.' | split: '|' -%}
+  {%- else -%}
+    {%- assign t = 'Załóż konto B2B|Poproś o wycenę hurtową|Marki w naszej ofercie|Indyjskie i ajurwedyjskie kosmetyki oraz żywność z naszego magazynu w Polsce. Dostępność potwierdzamy w wycenie.|Dlaczego JP MART|Wysyłka z naszego magazynu w Polsce (zapas w UE, bez cła z Indii)|Dostarczamy do firm w całej UE – koszt dostawy podajemy w wycenie|Netto ceny hurtowe w EUR przekazujemy po zatwierdzeniu konta firmowego|Faktura i VAT zależą od kraju i ważnego numeru VAT UE (weryfikacja w VIES)|Kategorie|Ziołowe pasty do zębów|Pielęgnacja włosów|Dabur i Vatika|Katalog produktów do wyceny|Wyszukaj produkty i dodaj te, które chcesz wycenić. Nie pokazujemy tu cen – ceny hurtowe przekazujemy po zatwierdzeniu. Inne indyjskie marki na zapytanie.|Szukaj produktu lub marki…|Wszystkie marki|Dodaj do wyceny|Ilość|Wybrane produkty|Nie wybrano jeszcze produktów.|Brak produktów.|Poproś o wycenę hurtową|Napisz, czego potrzebujesz. Odpowiemy z dostępnością, cenami, ilościami w kartonie i kosztem dostawy.|Osoba kontaktowa|Służbowy e-mail|Telefon|Nazwa firmy|Numer VAT UE|Kraj|Wybierz kraj|Strona internetowa firmy|Przeczytałem/am|politykę prywatności|i zgadzam się, aby JP MART skontaktował się ze mną w sprawie tego zapytania.|Potwierdzam, że składam zapytanie w imieniu zarejestrowanej firmy.|Wyślij zapytanie o wycenę|Dziękujemy! Otrzymaliśmy zapytanie i odpowiemy na służbowy e-mail.|Pola oznaczone * są wymagane.|Wybierz co najmniej jeden produkt lub opisz, czego potrzebujesz.|Szukasz cen detalicznych? Zajrzyj do naszego sklepu.|Przejdź do sklepu detalicznego|Inne produkty, ilości lub wiadomość|Źródło: cennik hurtowy JP MART z 30.09.2026 – ceny tylko dla zatwierdzonych klientów firmowych.' | split: '|' -%}
+{%- endcase -%}
+{%- assign countries = 'Austria|Belgium|Bulgaria|Croatia|Cyprus|Czechia|Denmark|Estonia|Finland|France|Germany|Greece|Hungary|Ireland|Italy|Latvia|Lithuania|Luxembourg|Malta|Netherlands|Poland|Portugal|Romania|Slovakia|Slovenia|Spain|Sweden' | split: '|' -%}
+{%- assign brand_list = 'Dabur|Vatika|Himalaya|Vicco|Biotique|Hesh|Bajaj|Navratna|Sesa|Medimix|Chandrika|Mysore Sandal|Santoor|Zandu|Samahan (Link Natural)|Organic India|Annam' | split: '|' -%}
+{%- assign skip_vendors = 'Ocean|Silver Touch' | split: '|' -%}
+
+<div class="jpw" id="b2b-hub">
+  <div class="jpw__bar">
+    <p>{{ t[3] }}</p>
+    <a class="jpw-btn" href="#b2b-form" data-jpw-track="apply_click">{{ t[0] }}</a>
+    <a class="jpw-btn jpw-btn--ghost" href="#b2b-quote" data-jpw-track="quote_click">{{ t[1] }}</a>
+  </div>
+
+  <div class="jpw__sec">
+    <h2>{{ t[2] }}</h2>
+    <ul class="jpw__brands">{%- for b in brand_list -%}<li>{{ b }}</li>{%- endfor -%}</ul>
+  </div>
+
+  <div class="jpw__sec">
+    <h2>{{ t[4] }}</h2>
+    <ul class="jpw__trust"><li>{{ t[5] }}</li><li>{{ t[6] }}</li><li>{{ t[7] }}</li><li>{{ t[8] }}</li></ul>
+  </div>
+
+  <div class="jpw__sec">
+    <h2>{{ t[9] }}</h2>
+    <div class="jpw__cats">
+      <a href="{{ routes.collections_url }}/oral-care">{{ t[10] }}</a>
+      <a href="{{ routes.collections_url }}/hair-care">{{ t[11] }}</a>
+      <a href="{{ routes.collections_url }}/dabur-vatika-ajurwedyjska-pielegnacja">{{ t[12] }}</a>
+    </div>
+  </div>
+
+  <div class="jpw__sec" id="b2b-catalog">
+    <h2>{{ t[13] }}</h2>
+    <p>{{ t[14] }}</p>
+    <div class="jpw__tools">
+      <input type="search" id="jpw-q" placeholder="{{ t[15] }}" aria-label="{{ t[15] }}">
+      <select id="jpw-v" aria-label="{{ t[16] }}"><option value="">{{ t[16] }}</option></select>
+    </div>
+    <div class="jpw__list" id="jpw-list">
+      {%- paginate collections.all.products by 250 -%}
+        {%- for p in collections.all.products -%}
+          {%- if skip_vendors contains p.vendor or p.title contains 'Zestaw' or p.title contains 'zestaw' -%}{%- continue -%}{%- endif -%}
+          <div class="jpw__row" data-t="{{ p.title | downcase | escape }} {{ p.vendor | downcase | escape }}" data-v="{{ p.vendor | escape }}" data-name="{{ p.title | escape }}">
+            {%- if p.featured_image -%}<img src="{{ p.featured_image | image_url: width: 120 }}" alt="" loading="lazy" width="56" height="56">{%- else -%}<span></span>{%- endif -%}
+            <div><b>{{ p.title }}</b><small>{{ p.vendor }}</small></div>
+            <label class="jpw__pick"><input type="checkbox" aria-label="{{ t[17] }}: {{ p.title | escape }}"> {{ t[17] }} <input type="number" min="1" step="1" placeholder="{{ t[18] }}" aria-label="{{ t[18] }}" disabled></label>
+          </div>
+        {%- endfor -%}
+      {%- endpaginate -%}
+      <p id="jpw-none" hidden style="padding:16px;margin:0">{{ t[21] }}</p>
+    </div>
+    <p class="jpw__src">{{ t[43] }}</p>
+    <div class="jpw__sticky"><a class="jpw-btn" href="#b2b-quote" data-jpw-track="quote_click_catalog">{{ t[1] }} (<span id="jpw-count">0</span>)</a></div>
+  </div>
+
+  <div class="jpb2b" id="b2b-quote">
+    <h2 class="jpb2b__title">{{ t[22] }}</h2>
+    <p>{{ t[23] }}</p>
+    {%- form 'contact', id: 'jpm-b2b-quote', class: 'jpb2b__form', return_to: request.path | append: '?sent=quote' | append: '#b2b-quote' -%}
+      {%- if form.errors -%}<div class="jpb2b__err" role="alert">{{ form.errors | default_errors }}</div>{%- endif -%}
+      <p class="jpb2b__ok" id="jpw-ok" role="status" hidden>✅ {{ t[37] }}</p>
+      <div id="jpw-fields">
+      <input type="hidden" name="contact[Typ zgłoszenia]" value="HURT B2B – WYCENA">
+      <input type="hidden" name="contact[tags]" value="lead-new, quote-request, lead-lang-{{ request.locale.iso_code }}">
+      <input type="hidden" name="contact[Język strony]" value="{{ request.locale.iso_code }}">
+      <input type="hidden" name="contact[Pipeline]" value="New Inquiry">
+      <input type="hidden" name="contact[Wybrane produkty]" id="jpw-sel" value="">
+      <input type="hidden" name="contact[UTM]" id="jpw-utm" value="">
+      <input type="hidden" name="contact[Landing / referrer]" id="jpw-ref" value="">
+      <div class="jpb2b__hp" aria-hidden="true"><label>Website2<input type="text" name="contact[Pole kontrolne]" tabindex="-1" autocomplete="off"></label></div>
+      <div class="jpb2b__grid">
+        <label>{{ t[24] }} *<input type="text" name="contact[name]" required autocomplete="name"></label>
+        <label>{{ t[25] }} *<input type="email" name="contact[email]" required autocomplete="email"></label>
+        <label>{{ t[26] }} *<input type="tel" name="contact[phone]" required autocomplete="tel"></label>
+        <label>{{ t[27] }} *<input type="text" name="contact[Firma]" required autocomplete="organization"></label>
+        <label>{{ t[28] }} *<input type="text" name="contact[NIP / VAT UE]" required placeholder="DE123456789"></label>
+        <label>{{ t[29] }} *<select name="contact[Kraj]" required><option value="">{{ t[30] }}</option>{%- for c in countries -%}<option>{{ c }}</option>{%- endfor -%}</select></label>
+        <label class="jpb2b__full">{{ t[31] }}<input type="url" name="contact[Strona www]" placeholder="https://" autocomplete="url"></label>
+        <div class="jpb2b__full"><strong>{{ t[19] }}</strong><div class="jpw__sum" id="jpw-sumbox">{{ t[20] }}</div></div>
+        <label class="jpb2b__full">{{ t[42] }}<textarea name="contact[body]" id="jpw-body" rows="4"></textarea></label>
+        <label class="jpb2b__check jpb2b__full"><input type="checkbox" name="contact[Potwierdzenie firmy]" value="TAK" required> {{ t[35] }} *</label>
+        <label class="jpb2b__check jpb2b__full"><input type="checkbox" name="contact[Zgoda RODO]" value="TAK" required> <span>{{ t[32] }} <a href="{{ routes.privacy_policy_url }}" target="_blank" rel="noopener">{{ t[33] }}</a> {{ t[34] }} *</span></label>
+      </div>
+      <p class="jpb2b__note">{{ t[38] }}</p>
+      <p class="jpb2b__err" id="jpw-pick-err" role="alert" hidden>{{ t[39] }}</p>
+      <button type="submit" class="jpb2b__btn">{{ t[36] }}</button>
+      </div>
+    {%- endform -%}
+  </div>
+
+  <div class="jpw__retail">{{ t[40] }} <a href="{{ routes.all_products_collection_url }}">{{ t[41] }}</a></div>
+</div>
+
+<script>
+(function(){
+  var list=document.getElementById('jpw-list'); if(!list) return;
+  var rows=[].slice.call(list.querySelectorAll('.jpw__row')), q=document.getElementById('jpw-q'), vs=document.getElementById('jpw-v');
+  var sel=document.getElementById('jpw-sel'), box=document.getElementById('jpw-sumbox'), cnt=document.getElementById('jpw-count');
+  var empty=box.textContent, vendors={};
+  rows.forEach(function(r){vendors[r.dataset.v]=1});
+  Object.keys(vendors).sort().forEach(function(v){var o=document.createElement('option');o.value=v;o.textContent=v;vs.appendChild(o)});
+  function filter(){var s=q.value.trim().toLowerCase(),v=vs.value,n=0;rows.forEach(function(r){var ok=(!s||r.dataset.t.indexOf(s)>-1)&&(!v||r.dataset.v===v);r.hidden=!ok;if(ok)n++});document.getElementById('jpw-none').hidden=n>0}
+  function sync(){var out=[];rows.forEach(function(r){var c=r.querySelector('input[type=checkbox]'),n=r.querySelector('input[type=number]');n.disabled=!c.checked;if(c.checked)out.push(r.dataset.name+' ('+r.dataset.v+') x '+(n.value||'?'))});sel.value=out.join('\n');box.textContent=out.length?'':empty;if(out.length){var ul=document.createElement('ul');out.forEach(function(x){var li=document.createElement('li');li.textContent=x;ul.appendChild(li)});box.appendChild(ul)}cnt.textContent=out.length}
+  q.addEventListener('input',filter);vs.addEventListener('change',filter);list.addEventListener('input',sync);list.addEventListener('change',sync);
+  var f=document.getElementById('jpm-b2b-quote')||document.querySelector('#b2b-quote form');
+  if(f)f.addEventListener('submit',function(e){var b=document.getElementById('jpw-body');if(!sel.value&&!b.value.trim()){e.preventDefault();document.getElementById('jpw-pick-err').hidden=false}});
+  try{
+    var p=new URLSearchParams(location.search),u=[];
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid'].forEach(function(k){if(p.get(k))u.push(k+'='+p.get(k))});
+    if(u.length)sessionStorage.setItem('jpb2b_utm',u.join('&'));
+    if(!sessionStorage.getItem('jpb2b_ref'))sessionStorage.setItem('jpb2b_ref',(document.referrer||'direct')+' | '+location.pathname);
+    document.getElementById('jpw-utm').value=sessionStorage.getItem('jpb2b_utm')||'';
+    document.getElementById('jpw-ref').value=sessionStorage.getItem('jpb2b_ref')||'';
+    document.querySelectorAll('[data-jpw-track]').forEach(function(a){a.addEventListener('click',function(){track(a.dataset.jpwTrack)})});
+    if(p.get('sent')==='quote'){document.getElementById('jpw-ok').hidden=false;document.getElementById('jpw-fields').hidden=true;track('quote_submitted')}
+  }catch(e){}
+  function track(name){try{if(window.gtag)gtag('event',name,{event_category:'wholesale_hub'});if(window.fbq)fbq('trackCustom',name);if(window.Shopify&&Shopify.analytics&&Shopify.analytics.publish)Shopify.analytics.publish('wholesale_'+name,{})}catch(e){}}
+})();
+</script>
+
+{% schema %}
+{ "name": "JP MART – Wholesale Hub", "settings": [], "presets": [{ "name": "JP MART – Wholesale Hub" }] }
+{% endschema %}
