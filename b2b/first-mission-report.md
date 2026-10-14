@@ -51,3 +51,8 @@ Events/fields (Shopify Customer tags + GA4/UTM): `wholesale_form_view`, `wholesa
 
 ## 7. Approval needed
 Theme access (export or GitHub); publish EN/DE/FR pages; carton size/price/stock confirmation; connect Search Console/GA4; Semrush units; permission to fix Vicco SEO title.
+
+---
+## CORRECTION (Batch 1, 2026-10-14)
+Sections 1–2 above were wrong in places: the live theme (MAIN = "JP MART – v10 (cart, trust, cards draft)") DOES have EN/DE/PL (locales published), a localized page body for EN and DE (so the EN draft was redundant and was removed), and an existing localized B2B form (`sections/jpmart-b2b-form.liquid`, template `page.b2b`). Repo does not match the live theme; theme-dev/ now holds the dev form copy.
+Also found: apps BSS B2B Solution + Sami Wholesale embed (existing private-pricing tooling – not yet audited), 1 Shopify company record (ALTEVITA Group, SK – no contacts, no catalog), Markets: European Union (26 countries), Poland, UK; presentment currencies PLN/EUR/CZK/DKK/HUF/RON/SEK/GBP; plan Basic.
