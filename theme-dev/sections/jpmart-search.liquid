@@ -1,0 +1,244 @@
+{%- comment -%}
+  Header search + category menu + free-delivery bar. v2 (dev):
+  - REMOVED client-side "-20% for hurt-b2b tag" price display and its 1000 zl threshold (unverified, tag-based, contradicts fixed EUR price list).
+  - Mobile: labelled "Categories" button (grid icon), shorter search placeholder, B2B entry in menu, compact cookie banner CSS.
+{%- endcomment -%}
+{%- assign jps_handles = 'oral-care,hair-care,beauty-personal-care,ayurveda-wellness,incense-home-fragrance,home-lifestyle,food-grocery,copper-products,special-offers' | split: ',' -%}
+{%- assign jps_b2b_url = routes.root_url | append: '/pages/wholesale-b2b' | replace: '//', '/' -%}
+{%- case request.locale.iso_code -%}
+  {%- when 'en' -%}
+    {%- assign jps_names = 'Toothpaste,Hair care,Beauty & personal care,Ayurveda & wellness,Incense & home fragrance,Home & lifestyle,Indian food,Copper products,Special offers' | split: ',' -%}
+    {%- assign t_cat = 'Categories' -%}{%- assign t_all = 'All products' -%}{%- assign t_sr = 'Search JP MART' -%}
+    {%- assign t_ph = 'Search: Dabur toothpaste, Vatika oil…' -%}{%- assign t_ph_s = 'Search the shop…' -%}{%- assign t_go = 'Search' -%}{%- assign t_nav = 'Product categories' -%}
+    {%- assign t_b2b = 'Wholesale B2B for businesses' -%}
+    {%- assign ship_left = 'Add <strong>{x}</strong> more for <strong>free delivery</strong>' -%}
+    {%- assign ship_done = '🎉 You have <strong>free delivery</strong>!' -%}
+    {%- assign p1 = 'Original product from India' -%}{%- assign p2 = 'Free delivery from 99 zł in Poland' -%}
+    {%- assign p3 = 'Secure, encrypted payments' -%}{%- assign p4 = 'Shipped from Poland' -%}
+  {%- when 'de' -%}
+    {%- assign jps_names = 'Zahnpasta,Haarpflege,Schönheit & Pflege,Ayurveda & Wellness,Räucherwerk & Raumduft,Wohnen & Lifestyle,Indische Lebensmittel,Kupfergefäße,Angebote' | split: ',' -%}
+    {%- assign t_cat = 'Kategorien' -%}{%- assign t_all = 'Alle Produkte' -%}{%- assign t_sr = 'JP MART durchsuchen' -%}
+    {%- assign t_ph = 'Suche: Dabur Zahnpasta, Vatika Öl…' -%}{%- assign t_ph_s = 'Shop durchsuchen…' -%}{%- assign t_go = 'Suchen' -%}{%- assign t_nav = 'Produktkategorien' -%}
+    {%- assign t_b2b = 'Großhandel B2B für Unternehmen' -%}
+    {%- assign ship_left = 'Noch <strong>{x}</strong> bis zum <strong>kostenlosen Versand</strong>' -%}
+    {%- assign ship_done = '🎉 <strong>Kostenloser Versand</strong> ist freigeschaltet!' -%}
+    {%- assign p1 = 'Originalprodukt aus Indien' -%}{%- assign p2 = 'Versand in ganz Europa' -%}
+    {%- assign p3 = 'Sichere, verschlüsselte Zahlung' -%}{%- assign p4 = 'Versand aus Polen' -%}
+  {%- else -%}
+    {%- assign jps_names = 'Pasty do zębów,Pielęgnacja włosów,Uroda i pielęgnacja,Ajurweda i zdrowie,Kadzidła i zapachy,Dom i styl życia,Indyjska żywność,Naczynia miedziane,Promocje' | split: ',' -%}
+    {%- assign t_cat = 'Kategorie' -%}{%- assign t_all = 'Wszystkie produkty' -%}{%- assign t_sr = 'Szukaj w sklepie JP MART' -%}
+    {%- assign t_ph = 'Szukaj: pasta Dabur, olejek Vatika…' -%}{%- assign t_ph_s = 'Szukaj w sklepie…' -%}{%- assign t_go = 'Szukaj' -%}{%- assign t_nav = 'Kategorie produktów' -%}
+    {%- assign t_b2b = 'Hurt B2B dla firm' -%}
+    {%- assign ship_left = 'Brakuje Ci <strong>{x}</strong> do <strong>darmowej dostawy</strong>' -%}
+    {%- assign ship_done = '🎉 Masz <strong>darmową dostawę</strong>!' -%}
+    {%- assign p1 = 'Oryginalny produkt z Indii' -%}{%- assign p2 = 'Darmowa dostawa od 99 zł' -%}
+    {%- assign p3 = 'Bezpieczne, szyfrowane płatności' -%}{%- assign p4 = 'Wysyłka z Polski' -%}
+{%- endcase -%}
+
+<div class="jps">
+  <div class="jps__inner">
+    <div class="jps__cats">
+      <button type="button" class="jps__btn" aria-expanded="false" aria-controls="jps-menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="4" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="13" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="13" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <span class="jps__btn-label">{{ t_cat }}</span>
+      </button>
+      <nav id="jps-menu" class="jps__menu" aria-label="{{ t_nav }}">
+        {%- for handle in jps_handles -%}
+          {%- assign c = collections[handle] -%}
+          {%- if c != blank and c.products_count > 0 -%}
+            <a href="{{ c.url }}"><span>{{ jps_names[forloop.index0] }}</span><small>{{ c.products_count }}</small></a>
+          {%- endif -%}
+        {%- endfor -%}
+        <a class="jps__all" href="{{ routes.all_products_collection_url }}"><span>{{ t_all }}</span></a>
+        <a class="jps__b2b" href="{{ jps_b2b_url }}"><span>🏢 {{ t_b2b }}</span></a>
+      </nav>
+    </div>
+    <form action="{{ routes.search_url }}" method="get" role="search" class="jps__form">
+      <label for="jps-q" class="jps__sr">{{ t_sr }}</label>
+      <input id="jps-q" type="search" name="q" value="{{ search.terms | escape }}" placeholder="{{ t_ph }}" data-ph="{{ t_ph | escape }}" data-ph-s="{{ t_ph_s | escape }}" autocomplete="off" enterkeyhint="search">
+      <input type="hidden" name="type" value="product">
+      <button type="submit" aria-label="{{ t_go }}">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="jps__submit-label">{{ t_go }}</span>
+      </button>
+    </form>
+  </div>
+</div>
+
+<div id="jps-ship" class="jps-ship" hidden aria-live="polite" data-threshold="9900" data-left="{{ ship_left | escape }}" data-done="{{ ship_done | escape }}">
+  <div class="jps-ship__inner">
+    <p class="jps-ship__text"></p>
+    <div class="jps-ship__track" aria-hidden="true"><div class="jps-ship__fill"></div></div>
+  </div>
+</div>
+
+{%- if template.name == 'product' -%}
+<ul id="jpm-pdp-trust" class="jpm-pdp-trust" role="list" hidden>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 3h4v4l3 3-3 3v4h-4l-3 3-3-3H5v-4l-3-3 3-3V5h4z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 12.2l2.3 2.3 4.7-4.8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>{{ p1 }}</span></li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>{{ p2 }}</span></li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 10V7a4 4 0 018 0v3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>{{ p3 }}</span></li>
+  <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9-5 9 5v8l-9 5-9-5z M3 8l9 5 9-5 M12 13v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span>{{ p4 }}</span></li>
+</ul>
+{%- endif -%}
+
+<script>
+  (function () {
+    var wrap = document.querySelector('.jps__cats');
+    if (wrap && !wrap.dataset.ready) {
+      wrap.dataset.ready = '1';
+      var btn = wrap.querySelector('.jps__btn');
+      var menu = wrap.querySelector('.jps__menu');
+      var setOpen = function (open) { btn.setAttribute('aria-expanded', open ? 'true' : 'false'); menu.classList.toggle('is-open', open); };
+      btn.addEventListener('click', function (e) { e.stopPropagation(); setOpen(btn.getAttribute('aria-expanded') !== 'true'); });
+      document.addEventListener('click', function (e) { if (!wrap.contains(e.target)) setOpen(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && menu.classList.contains('is-open')) { setOpen(false); btn.focus(); } });
+    }
+
+    var qi = document.getElementById('jps-q');
+    if (qi && window.matchMedia) {
+      var mq = window.matchMedia('(max-width: 768px)');
+      var setPh = function () { qi.placeholder = mq.matches ? qi.dataset.phS : qi.dataset.ph; };
+      setPh();
+      if (mq.addEventListener) { mq.addEventListener('change', setPh); }
+    }
+
+    function placeTrust() {
+      var trust = document.getElementById('jpm-pdp-trust');
+      if (!trust || trust.dataset.placed) return;
+      var main = document.getElementById('MainContent');
+      if (!main) return;
+      var buttons = main.querySelectorAll('.add-to-cart-button');
+      var target = null;
+      for (var i = 0; i < buttons.length; i++) { if (!buttons[i].closest('.product-card')) { target = buttons[i]; break; } }
+      if (!target) return;
+      var anchor = target.closest('form') || target.closest('add-to-cart-component') || target;
+      anchor.parentNode.insertBefore(trust, anchor.nextSibling);
+      trust.hidden = false;
+      trust.dataset.placed = '1';
+    }
+    if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', placeTrust); } else { placeTrust(); }
+
+    var bar = document.getElementById('jps-ship');
+    if (!bar || window.__jpsShip) return;
+    window.__jpsShip = true;
+    var THRESHOLD = parseInt(bar.dataset.threshold, 10) || 9900;
+    var textEl = bar.querySelector('.jps-ship__text');
+    var fillEl = bar.querySelector('.jps-ship__fill');
+    function fmtC(c) { return (c / 100).toFixed(2).replace('.', ',') + ' zł'; }
+    function render(cart) {
+      if (!cart || cart.currency !== 'PLN' || !cart.item_count) { bar.hidden = true; return; }
+      var total = cart.items_subtotal_price || cart.total_price;
+      var left = THRESHOLD - total;
+      bar.hidden = false;
+      bar.classList.toggle('is-done', left <= 0);
+      textEl.innerHTML = left > 0 ? bar.dataset.left.replace('{x}', fmtC(left)) : bar.dataset.done;
+      fillEl.style.width = Math.min(100, (total / THRESHOLD) * 100) + '%';
+    }
+    function load() {
+      var root = (window.Shopify && Shopify.routes && Shopify.routes.root) || '/';
+      fetch(root + 'cart.js', { credentials: 'same-origin' }).then(function (r) { return r.json(); }).then(render).catch(function () {});
+    }
+    var origFetch = window.fetch;
+    window.fetch = function (input) {
+      var url = typeof input === 'string' ? input : (input && input.url) || '';
+      var p = origFetch.apply(this, arguments);
+      if (/\/cart\/(add|change|update|clear)/.test(url)) { p.then(function () { setTimeout(load, 400); }).catch(function () {}); }
+      return p;
+    };
+    document.addEventListener('cart:update', load);
+    load();
+  })();
+</script>
+
+<style>
+  :root { --jp-green: #173f2d; --jp-green-dark: #0f2d20; --jp-gold: #c8922f; --jp-ivory: #fbf8f2; --jp-line: #e6dfd0; --jp-muted: #5b6660; }
+  .jps { background: var(--jp-ivory); border-top: 1px solid var(--jp-line); border-bottom: 1px solid var(--jp-line); padding: 10px 20px; }
+  .jps__inner { max-width: 1220px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .jps__sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .jps__cats { position: relative; flex: 0 0 auto; }
+  .jps__btn { display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 18px; border: 0; border-radius: 10px; background: var(--jp-green); color: #fff; font-size: 0.9rem; font-weight: 700; cursor: pointer; transition: background-color .2s ease; }
+  .jps__btn svg { width: 20px; height: 20px; }
+  .jps__btn:hover, .jps__btn[aria-expanded="true"] { background: var(--jp-green-dark); }
+  .jps__menu { display: none; position: absolute; top: calc(100% + 8px); left: 0; z-index: 60; width: 290px; padding: 8px; background: #fff; border: 1px solid var(--jp-line); border-radius: 14px; box-shadow: 0 18px 40px -14px rgba(23, 63, 45, .28); }
+  .jps__menu.is-open { display: block; }
+  .jps__menu a { display: flex; justify-content: space-between; align-items: center; padding: 11px 12px; border-radius: 8px; text-decoration: none; color: var(--jp-green); font-size: 0.93rem; font-weight: 600; }
+  .jps__menu a small { font-size: 0.78rem; font-weight: 500; color: #7b8580; }
+  .jps__menu a:hover { background: #f4f1ea; }
+  .jps__menu .jps__all { margin-top: 4px; border-top: 1px solid var(--jp-line); border-radius: 0; color: #8a5f14; }
+  .jps__menu .jps__b2b { color: var(--jp-green); background: #fbf1dc; margin-top: 4px; }
+  .jps__form { flex: 1; display: flex; height: 46px; overflow: hidden; border: 1px solid var(--jp-line); border-radius: 10px; background: #fff; transition: border-color .2s ease, box-shadow .2s ease; }
+  .jps__form:focus-within { border-color: var(--jp-green); box-shadow: 0 0 0 3px rgba(23, 63, 45, .1); }
+  .jps__form input[type="search"] { flex: 1; min-width: 0; padding: 0 16px; border: 0; outline: 0; background: transparent; color: #1f2933; font-size: 16px; text-overflow: ellipsis; }
+  .jps__form input::placeholder { color: #8a918d; }
+  .jps__form button { display: inline-flex; align-items: center; gap: 6px; padding: 0 20px; border: 0; background: var(--jp-green); color: #fff; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
+  .jps__form button svg { width: 18px; height: 18px; }
+  .jps__form button:hover { background: var(--jp-green-dark); }
+  .jps__btn:focus-visible, .jps__form button:focus-visible, .jps__menu a:focus-visible { outline: 3px solid var(--jp-gold); outline-offset: 2px; }
+  .jps-ship { background: #eef3ea; border-bottom: 1px solid #dce5d6; padding: 8px 20px; }
+  .jps-ship[hidden] { display: none; }
+  .jps-ship__inner { max-width: 1220px; margin: 0 auto; display: flex; align-items: center; gap: 14px; }
+  .jps-ship__text { margin: 0; font-size: 0.9rem; color: var(--jp-green); white-space: nowrap; }
+  .jps-ship__track { flex: 1; height: 8px; background: #d6e0d0; border-radius: 999px; overflow: hidden; min-width: 80px; }
+  .jps-ship__fill { height: 100%; width: 0; background: var(--jp-green); border-radius: inherit; transition: width .5s ease; }
+  .jps-ship.is-done { background: var(--jp-green); }
+  .jps-ship.is-done .jps-ship__text { color: #fff; }
+  .jps-ship.is-done .jps-ship__track { display: none; }
+  .product-card .product-grid__card { display: flex !important; flex-direction: column !important; height: 100%; }
+  .product-card .product-grid__card > * { width: 100%; }
+  .product-card [class*="title"] { min-height: 0 !important; max-height: none !important; }
+  .product-card .product-grid__card p[role="heading"] { display: -webkit-box !important; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; margin: 0 !important; font-family: var(--font-body--family) !important; font-size: 15px !important; line-height: 1.35 !important; font-weight: 600 !important; min-height: 2.7em; max-height: 2.7em; color: #1f2a24; }
+  .product-card [ref="priceContainer"] { display: flex !important; align-items: baseline; flex-wrap: nowrap; gap: 8px; min-height: 28px; margin: 6px 0 12px !important; white-space: nowrap; }
+  .product-card [ref="priceContainer"] .price { font-size: 19px !important; font-weight: 800 !important; color: var(--jp-green) !important; margin: 0 !important; line-height: 1.2 !important; }
+  .product-card [ref="priceContainer"] .compare-at-price { font-size: 13px !important; font-weight: 500 !important; color: #8a918d !important; text-decoration: line-through; margin: 0 !important; }
+  .product-card .product-grid__card > :last-child { margin-top: auto !important; }
+  .product-card img { background: #fff; }
+  .add-to-cart-button { width: 100% !important; min-height: 48px !important; padding: 0 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 8px; border: 0 !important; border-radius: 10px !important; background: var(--jp-green) !important; color: #fff !important; font-size: 15px !important; font-weight: 700 !important; line-height: 1 !important; white-space: nowrap !important; transition: background-color .2s ease; }
+  .add-to-cart-button:hover { background: var(--jp-green-dark) !important; }
+  .add-to-cart-button:focus-visible { outline: 3px solid var(--jp-gold) !important; outline-offset: 2px; }
+  .add-to-cart-button:disabled { background: #e6dfd0 !important; color: #6b7470 !important; cursor: not-allowed; }
+  .add-to-cart-button .add-to-cart-icon { width: 18px; height: 18px; flex: 0 0 18px; }
+  .product-badges__badge { font-weight: 700 !important; border-radius: 999px !important; padding: 5px 11px !important; font-size: 12px !important; letter-spacing: .01em; }
+  main[data-template^="product"] [ref="priceContainer"]:not(.product-card [ref="priceContainer"]) { display: flex; align-items: baseline; gap: 10px; margin: 6px 0 4px; }
+  main[data-template^="product"] [ref="priceContainer"]:not(.product-card [ref="priceContainer"]) .price { font-size: 30px !important; font-weight: 700 !important; color: var(--jp-green) !important; font-family: var(--font-body--family); }
+  main[data-template^="product"] .add-to-cart-button:not(.product-card .add-to-cart-button) { min-height: 54px !important; font-size: 16px !important; }
+  .jpm-pdp-trust { list-style: none; margin: 16px 0 4px; padding: 14px 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; background: #fff; border: 1px solid var(--jp-line); border-radius: 12px; }
+  .jpm-pdp-trust[hidden] { display: none; }
+  .jpm-pdp-trust li { display: flex; align-items: center; gap: 10px; font-size: 0.875rem; color: #2f3a33; line-height: 1.3; }
+  .jpm-pdp-trust svg { flex: 0 0 22px; width: 22px; height: 22px; color: var(--jp-green); }
+  main[data-template^="collection"] h1 { color: var(--jp-green); letter-spacing: -0.01em; }
+  main .rte a, main .text-block a { color: var(--jp-green); text-underline-offset: 3px; }
+  main .rte a:hover, main .text-block a:hover { color: #8a5f14; }
+  @media (max-width: 768px) {
+    .jps { padding: 8px 12px; }
+    .jps__inner { gap: 8px; }
+    .jps__btn { padding: 0 12px; gap: 6px; font-size: 0.85rem; }
+    .jps__submit-label { display: none; }
+    .jps__form input[type="search"] { padding: 0 12px; }
+    .jps__form button { padding: 0 14px; }
+    .jps__menu { width: min(290px, calc(100vw - 24px)); }
+    .jps-ship { padding: 8px 12px; }
+    .jps-ship__inner { flex-direction: column; align-items: stretch; gap: 6px; }
+    .jps-ship__text { white-space: normal; font-size: 0.85rem; text-align: center; }
+    .jpm-pdp-trust { grid-template-columns: 1fr; }
+    /* Compact Shopify cookie banner on mobile (buttons and functionality unchanged; verify selectors in a live preview) */
+    #shopify-pc__banner { max-height: 36vh !important; overflow-y: auto !important; padding: 12px 14px !important; }
+    #shopify-pc__banner h2 { font-size: 15px !important; margin: 0 0 6px !important; }
+    #shopify-pc__banner p { font-size: 12.5px !important; line-height: 1.35 !important; margin: 0 0 8px !important; }
+    #shopify-pc__banner__btns { display: flex !important; flex-wrap: wrap !important; gap: 8px !important; }
+    #shopify-pc__banner__btns button { flex: 1 1 28% !important; min-height: 44px !important; font-size: 13px !important; padding: 0 8px !important; }
+  }
+  @media (max-width: 749px) {
+    .product-card .product-grid__card p[role="heading"] { font-size: 14px !important; }
+    .product-card [ref="priceContainer"] .price { font-size: 17px !important; }
+    .product-card .add-to-cart-button { font-size: 13px !important; min-height: 44px !important; padding: 0 8px !important; }
+    .product-card .add-to-cart-button .add-to-cart-icon { display: none !important; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "JP MART – wyszukiwarka",
+  "settings": [],
+  "presets": [{"name": "JP MART – wyszukiwarka"}]
+}
+{% endschema %}

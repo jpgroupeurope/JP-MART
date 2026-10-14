@@ -1,0 +1,271 @@
+{%- assign jpm_contact_url = routes.root_url | append: '/pages/contact' | replace: '//', '/' -%}
+{%- assign jpm_b2b_url = routes.root_url | append: '/pages/wholesale-b2b' | replace: '//', '/' -%}
+{%- assign jpm_handles = 'kosmetyki-ajurwedyjskie,oral-care,hair-care,herbaty,ayurveda-wellness,incense-home-fragrance' | split: ',' -%}
+{%- assign jpm_tints = '#eaf1eb,#fbf1dc,#f5e9e4,#eef0f7,#f3efe3,#e8f1ef' | split: ',' -%}
+{%- assign jpm_brand_handles = 'dabur,vatika,himalaya,organic-india,vicco,sesa' | split: ',' -%}
+{%- assign jpm_brand_names = 'Dabur,Vatika,Himalaya,Organic India,Vicco,Sesa' | split: ',' -%}
+
+{%- case request.locale.iso_code -%}
+{%- when 'en' -%}
+  {%- assign t_h1 = 'Ayurvedic & Indian cosmetics, delivered across Poland and Europe' -%}
+  {%- assign t_lead = 'Original Dabur, Vatika, Himalaya and Organic India – toothpastes, hair oils, shampoos, teas and Chyawanprash. Natural ingredients and traditional recipes.' -%}
+  {%- assign t_btn1 = 'Shop bestsellers' -%}{%- assign t_btn2 = 'Ayurvedic cosmetics' -%}
+  {%- assign t_b2bcta = 'Wholesale for European businesses – Apply for B2B access' -%}
+  {%- assign t_offer = '🎁 <strong>10% off</strong> your first order with code <strong>WELCOME10</strong>' -%}
+  {%- assign t_offer2 = 'Dabur & Vatika set 99 zł – free delivery' -%}
+  {%- assign t_tr1a = 'Free delivery from 99 zł' -%}{%- assign t_tr1b = 'in Poland, usually 2–4 business days' -%}
+  {%- assign t_tr2a = 'Original products' -%}{%- assign t_tr2b = 'trusted Indian brands' -%}
+  {%- assign t_tr3a = 'BLIK, cards, PayPal' -%}{%- assign t_tr3b = 'secure payments' -%}
+  {%- assign t_tr4a = 'Wholesale B2B' -%}{%- assign t_tr4b = 'for businesses in Poland and the EU' -%}
+  {%- assign t_brands = 'Shop by brand' -%}{%- assign t_see = 'Shop' -%}
+  {%- assign t_tags = 'Toothpastes & Chyawanprash|Hair oils, shampoos, masks|Personal care & toothpaste|Tulsi teas & ghee|Vajradanti herbal toothpaste|Ayurvedic hair oil' | split: '|' -%}
+  {%- assign t_cats = 'Shop by category' -%}
+  {%- assign t_names = 'Ayurvedic cosmetics,Toothpaste,Hair care,Tulsi & Ayurvedic teas,Ayurveda & wellness,Incense & home fragrance' | split: ',' -%}
+  {%- assign t_faq = 'Frequently asked questions' -%}{%- assign t_contact = 'Go to contact' -%}
+  {%- capture q1 -%}Are the products original?{%- endcapture -%}
+  {%- capture a1 -%}Yes. We sell original products from Dabur, Vatika, Himalaya, Organic India, Vicco and other brands, in factory packaging, shipped from Poland.{%- endcapture -%}
+  {%- capture q2 -%}How much does delivery cost?{%- endcapture -%}
+  {%- capture a2 -%}Standard delivery in Poland is free for orders from 99 zł and usually takes 2–4 business days. We also ship to other European countries.{%- endcapture -%}
+  {%- capture q3 -%}How is Ayurvedic toothpaste different from regular toothpaste?{%- endcapture -%}
+  {%- capture a3 -%}Ayurvedic toothpastes are based on herbs and plant extracts such as neem, clove, miswak or black seed. Some are fluoride-free – check each product description.{%- endcapture -%}
+  {%- capture q4 -%}Do you offer wholesale?{%- endcapture -%}
+  {%- capture a4 -%}Yes – we supply businesses in Poland and other EU countries. Send a wholesale inquiry and we will confirm prices, quantities, availability and delivery for your order.{%- endcapture -%}
+{%- when 'de' -%}
+  {%- assign t_h1 = 'Ayurvedische & indische Kosmetik – Versand in ganz Europa' -%}
+  {%- assign t_lead = 'Original Dabur, Vatika, Himalaya und Organic India – Zahnpasta, Haaröle, Shampoos, Tees und Chyawanprash. Natürliche Inhaltsstoffe, traditionelle Rezepturen.' -%}
+  {%- assign t_btn1 = 'Bestseller ansehen' -%}{%- assign t_btn2 = 'Ayurvedische Kosmetik' -%}
+  {%- assign t_b2bcta = 'Großhandel für europäische Unternehmen – B2B-Zugang beantragen' -%}
+  {%- assign t_offer = '🎁 <strong>10 % Rabatt</strong> auf die erste Bestellung mit <strong>WELCOME10</strong>' -%}
+  {%- assign t_offer2 = 'Dabur & Vatika Set 99 zł' -%}
+  {%- assign t_tr1a = 'Versand in ganz Europa' -%}{%- assign t_tr1b = 'schnell aus Polen' -%}
+  {%- assign t_tr2a = 'Originalprodukte' -%}{%- assign t_tr2b = 'bewährte indische Marken' -%}
+  {%- assign t_tr3a = 'Karte, PayPal, Apple Pay' -%}{%- assign t_tr3b = 'sichere Zahlung' -%}
+  {%- assign t_tr4a = 'Großhandel B2B' -%}{%- assign t_tr4b = 'für Unternehmen in Polen und der EU' -%}
+  {%- assign t_brands = 'Nach Marke einkaufen' -%}{%- assign t_see = 'Ansehen' -%}
+  {%- assign t_tags = 'Zahnpasta & Chyawanprash|Haaröle, Shampoos, Masken|Pflege & Zahnpasta|Tulsi-Tees & Ghee|Vajradanti Kräuterzahnpasta|Ayurvedisches Haaröl' | split: '|' -%}
+  {%- assign t_cats = 'Nach Kategorie einkaufen' -%}
+  {%- assign t_names = 'Ayurvedische Kosmetik,Zahnpasta,Haarpflege,Tulsi & Ayurveda-Tees,Ayurveda & Wellness,Räucherwerk & Raumduft' | split: ',' -%}
+  {%- assign t_faq = 'Häufige Fragen' -%}{%- assign t_contact = 'Zum Kontakt' -%}
+  {%- capture q1 -%}Sind die Produkte original?{%- endcapture -%}
+  {%- capture a1 -%}Ja. Wir verkaufen Originalprodukte von Dabur, Vatika, Himalaya, Organic India, Vicco und weiteren Marken in Originalverpackung, versandt aus Polen.{%- endcapture -%}
+  {%- capture q2 -%}Wie lange dauert der Versand?{%- endcapture -%}
+  {%- capture a2 -%}Wir versenden in ganz Polen und in andere europäische Länder. Die Lieferzeit hängt vom Zielland ab.{%- endcapture -%}
+  {%- capture q3 -%}Worin unterscheidet sich ayurvedische Zahnpasta?{%- endcapture -%}
+  {%- capture a3 -%}Ayurvedische Zahnpasten basieren auf Kräutern wie Neem, Nelke, Miswak oder Schwarzkümmel. Einige sind fluoridfrei – siehe Produktbeschreibung.{%- endcapture -%}
+  {%- capture q4 -%}Bieten Sie Großhandel an?{%- endcapture -%}
+  {%- capture a4 -%}Ja – wir beliefern Unternehmen in Polen und anderen EU-Ländern. Senden Sie eine Großhandelsanfrage; Preise, Mengen, Verfügbarkeit und Lieferung bestätigen wir für Ihre Bestellung.{%- endcapture -%}
+{%- else -%}
+  {%- assign t_h1 = 'Kosmetyki ajurwedyjskie i indyjskie z dostawą w całej Polsce' -%}
+  {%- assign t_lead = 'Oryginalne Dabur, Vatika, Himalaya i Organic India – pasty do zębów, olejki do włosów, szampony, herbaty i Chyawanprash. Naturalne składniki i tradycyjne receptury.' -%}
+  {%- assign t_btn1 = 'Zobacz bestsellery' -%}{%- assign t_btn2 = 'Kosmetyki ajurwedyjskie' -%}
+  {%- assign t_b2bcta = 'Hurt dla firm z Europy – załóż konto B2B' -%}
+  {%- assign t_offer = '🎁 <strong>-10%</strong> na pierwsze zamówienie z kodem <strong>WELCOME10</strong>' -%}
+  {%- assign t_offer2 = 'Zestaw Dabur & Vatika 99 zł – dostawa gratis' -%}
+  {%- assign t_tr1a = 'Darmowa dostawa od 99 zł' -%}{%- assign t_tr1b = 'w Polsce, zwykle 2–4 dni robocze' -%}
+  {%- assign t_tr2a = 'Oryginalne produkty' -%}{%- assign t_tr2b = 'sprawdzone marki z Indii' -%}
+  {%- assign t_tr3a = 'BLIK, karty, PayPal' -%}{%- assign t_tr3b = 'bezpieczne płatności' -%}
+  {%- assign t_tr4a = 'Hurt B2B' -%}{%- assign t_tr4b = 'dla firm z Polski i UE' -%}
+  {%- assign t_brands = 'Kupuj według marki' -%}{%- assign t_see = 'Zobacz' -%}
+  {%- assign t_tags = 'Pasty do zębów i Chyawanprash|Olejki, szampony, maski|Pielęgnacja i pasty do zębów|Herbaty Tulsi i ghee|Ziołowa pasta Vajradanti|Ajurwedyjski olejek do włosów' | split: '|' -%}
+  {%- assign t_cats = 'Kupuj według kategorii' -%}
+  {%- assign t_names = 'Kosmetyki ajurwedyjskie,Pasty do zębów,Pielęgnacja włosów,Herbaty i Tulsi,Ajurweda i zdrowie,Kadzidła i zapachy' | split: ',' -%}
+  {%- assign t_faq = 'Najczęstsze pytania' -%}{%- assign t_contact = 'Przejdź do kontaktu' -%}
+  {%- capture q1 -%}Czy produkty są oryginalne?{%- endcapture -%}
+  {%- capture a1 -%}Tak. Sprzedajemy oryginalne produkty Dabur, Vatika, Himalaya, Organic India, Vicco i innych marek, w fabrycznych opakowaniach, z wysyłką z Polski.{%- endcapture -%}
+  {%- capture q2 -%}Ile kosztuje i ile trwa dostawa?{%- endcapture -%}
+  {%- capture a2 -%}Dostawa standardowa w Polsce jest darmowa od 99 zł i trwa zwykle 2–4 dni robocze. Wysyłamy też do innych krajów Europy.{%- endcapture -%}
+  {%- capture q3 -%}Czym różni się ajurwedyjska pasta do zębów od zwykłej?{%- endcapture -%}
+  {%- capture a3 -%}Ajurwedyjskie pasty opierają się na ziołach, takich jak neem, goździk, miswak czy czarnuszka. Część nie zawiera fluoru – sprawdź opis produktu.{%- endcapture -%}
+  {%- capture q4 -%}Czy prowadzicie sprzedaż hurtową?{%- endcapture -%}
+  {%- capture a4 -%}Tak – obsługujemy firmy z Polski i innych krajów UE. Wyślij zapytanie hurtowe, a potwierdzimy ceny, ilości, dostępność i dostawę dla Twojego zamówienia.{%- endcapture -%}
+{%- endcase -%}
+
+{%- case section.settings.part -%}
+{%- when 'faq' -%}
+<div class="jpm">
+  <section class="jpm-block jpm-faq" aria-labelledby="jpm-faq-title">
+    <h2 id="jpm-faq-title" class="jpm-h2">{{ t_faq }}</h2>
+    <details><summary>{{ q1 }}</summary><p>{{ a1 }}</p></details>
+    <details><summary>{{ q2 }}</summary><p>{{ a2 }}</p></details>
+    <details><summary>{{ q3 }}</summary><p>{{ a3 }}</p></details>
+    <details><summary>{{ q4 }}</summary><p>{{ a4 }} <a href="{{ jpm_b2b_url }}">B2B →</a></p></details>
+  </section>
+</div>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":{{ q1 | json }},"acceptedAnswer":{"@type":"Answer","text":{{ a1 | json }}}},
+{"@type":"Question","name":{{ q2 | json }},"acceptedAnswer":{"@type":"Answer","text":{{ a2 | json }}}},
+{"@type":"Question","name":{{ q3 | json }},"acceptedAnswer":{"@type":"Answer","text":{{ a3 | json }}}},
+{"@type":"Question","name":{{ q4 | json }},"acceptedAnswer":{"@type":"Answer","text":{{ a4 | json }}}}]}
+</script>
+{%- when 'brands' -%}
+<div class="jpm">
+  <section class="jpm-block jpm-brandsx" aria-labelledby="jpm-brands-title">
+    <h2 id="jpm-brands-title" class="jpm-h2">{{ t_brands }}</h2>
+    <div class="jpm-bgrid">
+      {%- for handle in jpm_brand_handles -%}
+        {%- assign c = collections[handle] -%}
+        {%- if c != blank and c.products_count > 0 -%}
+          {%- assign img = c.image -%}
+          {%- if img == blank -%}{%- assign img = c.products.first.featured_image -%}{%- endif -%}
+          <a class="jpm-bcard" href="{{ c.url }}">
+            <span class="jpm-bcard__img">{%- if img -%}{{ img | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200, 300, 400', sizes: '(min-width: 990px) 15vw, 40vw', alt: '' }}{%- endif -%}</span>
+            <span class="jpm-bcard__name">{{ jpm_brand_names[forloop.index0] }}</span>
+            <span class="jpm-bcard__tag">{{ t_tags[forloop.index0] }}</span>
+            <span class="jpm-bcard__cta">{{ t_see }} ({{ c.products_count }}) →</span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+</div>
+{%- when 'cats' -%}
+<div class="jpm">
+  <section class="jpm-block" aria-labelledby="jpm-cats-title">
+    <h2 id="jpm-cats-title" class="jpm-h2">{{ t_cats }}</h2>
+    <div class="jpm-cats">
+      {%- for handle in jpm_handles -%}
+        {%- assign c = collections[handle] -%}
+        {%- if c != blank and c.products_count > 0 -%}
+          {%- assign img = c.image -%}
+          {%- if img == blank -%}{%- assign img = c.products.first.featured_image -%}{%- endif -%}
+          {%- assign n = c.products_count -%}
+          {%- case request.locale.iso_code -%}
+            {%- when 'en' -%}{%- if n == 1 -%}{%- assign word = 'product' -%}{%- else -%}{%- assign word = 'products' -%}{%- endif -%}
+            {%- when 'de' -%}{%- if n == 1 -%}{%- assign word = 'Produkt' -%}{%- else -%}{%- assign word = 'Produkte' -%}{%- endif -%}
+            {%- else -%}
+              {%- assign m10 = n | modulo: 10 -%}{%- assign m100 = n | modulo: 100 -%}{%- assign word = 'produktów' -%}
+              {%- if n == 1 -%}{%- assign word = 'produkt' -%}{%- elsif m10 >= 2 and m10 <= 4 -%}{%- unless m100 >= 12 and m100 <= 14 -%}{%- assign word = 'produkty' -%}{%- endunless -%}{%- endif -%}
+          {%- endcase -%}
+          {%- assign t = forloop.index0 | modulo: 6 -%}
+          <a class="jpm-cat" href="{{ c.url }}" style="--tint: {{ jpm_tints[t] }}">
+            <span class="jpm-cat__img">{%- if img -%}{{ img | image_url: width: 500 | image_tag: loading: 'lazy', widths: '250, 400, 500', sizes: '(min-width: 990px) 16vw, 45vw', alt: '' }}{%- endif -%}</span>
+            <span class="jpm-cat__name">{{ t_names[forloop.index0] }}</span>
+            <span class="jpm-cat__count">{{ n }} {{ word }}</span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+</div>
+{%- else -%}
+<div class="jpm">
+  <section class="jpm-hero" aria-labelledby="jpm-title">
+    <div class="jpm-hero__text">
+      <h1 id="jpm-title" class="jpm-h1">{{ t_h1 }}</h1>
+      <p class="jpm-lead">{{ t_lead }}</p>
+      <div class="jpm-actions">
+        <a class="jpm-btn jpm-btn--primary" href="{{ collections['bestsellery'].url | default: routes.all_products_collection_url }}">{{ t_btn1 }}</a>
+        <a class="jpm-btn jpm-btn--ghost" href="{{ collections['kosmetyki-ajurwedyjskie'].url | default: routes.all_products_collection_url }}">{{ t_btn2 }}</a>
+      </div>
+      <a class="jpm-b2blink" href="{{ jpm_b2b_url }}">{{ t_b2bcta }} →</a>
+      <div class="jpm-offer">
+        <span class="jpm-offer__code">{{ t_offer }}</span>
+        {%- assign bundle = all_products['zestaw-dabur-vatika-99-zl-4-pasty-dabur-2-olejki-vatika'] -%}
+        {%- if bundle != blank and bundle.available -%}<a class="jpm-offer__link" href="{{ bundle.url }}">{{ t_offer2 }} →</a>{%- endif -%}
+      </div>
+    </div>
+    <div class="jpm-hero__media" aria-hidden="true">
+      <div class="jpm-disc"></div>
+      {%- assign hero_col = collections['dabur-vatika-ajurwedyjska-pielegnacja'] -%}
+      {%- if hero_col == blank or hero_col.products_count == 0 -%}{%- assign hero_col = collections['dabur'] -%}{%- endif -%}
+      {%- for p in hero_col.products limit: 3 -%}
+        {%- if p.featured_image -%}
+          {%- if forloop.first -%}{%- assign jpm_ld = 'eager' -%}{%- else -%}{%- assign jpm_ld = 'lazy' -%}{%- endif -%}
+          <div class="jpm-shot jpm-shot--{{ forloop.index }}">{{ p.featured_image | image_url: width: 700 | image_tag: loading: jpm_ld, widths: '300, 450, 700', sizes: '(min-width: 990px) 22vw, 40vw', alt: '' }}</div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+  <ul class="jpm-trust" role="list">
+    <li><span class="jpm-ico">🚚</span><div><strong>{{ t_tr1a }}</strong><span>{{ t_tr1b }}</span></div></li>
+    <li><span class="jpm-ico">✅</span><div><strong>{{ t_tr2a }}</strong><span>{{ t_tr2b }}</span></div></li>
+    <li><span class="jpm-ico">🔒</span><div><strong>{{ t_tr3a }}</strong><span>{{ t_tr3b }}</span></div></li>
+    <li><span class="jpm-ico">🏢</span><div><strong><a href="{{ jpm_b2b_url }}">{{ t_tr4a }}</a></strong><span>{{ t_tr4b }}</span></div></li>
+  </ul>
+</div>
+{%- endcase -%}
+
+<style>
+  .jpm { --jpm-forest: #173f2d; --jpm-turmeric: #c8922f; --jpm-saffron: #f6e3b8; --jpm-ink: #1f2933; --jpm-muted: #5b6660; --jpm-line: #e6dfd0; color: var(--jpm-ink); max-width: 1220px; margin: 0 auto; padding: 0 20px; font-family: var(--font-body--family, system-ui, sans-serif); }
+  .jpm a { color: inherit; }
+  .jpm a:focus-visible, .jpm summary:focus-visible { outline: 3px solid var(--jpm-turmeric); outline-offset: 3px; border-radius: 6px; }
+  .jpm img { display: block; width: 100%; height: 100%; object-fit: contain; }
+  .jpm-h1, .jpm-h2 { font-family: var(--font-heading--family, inherit); color: var(--jpm-forest); margin: 0; text-wrap: balance; }
+  .jpm-h1 { font-size: clamp(2rem, 1.2rem + 3vw, 3.3rem); line-height: 1.06; letter-spacing: -0.02em; max-width: 16ch; }
+  .jpm-h2 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem); line-height: 1.15; letter-spacing: -0.01em; }
+  .jpm-lead { font-size: 1.075rem; line-height: 1.6; color: var(--jpm-muted); max-width: 54ch; margin: 16px 0 24px; }
+  .jpm-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .jpm-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border-radius: 10px; font-weight: 700; font-size: 0.98rem; text-decoration: none; transition: background-color .2s ease, color .2s ease; }
+  .jpm .jpm-btn--primary { background: var(--jpm-forest); color: #fff; }
+  .jpm .jpm-btn--primary:hover { background: #0f2d20; }
+  .jpm .jpm-btn--ghost { color: var(--jpm-forest); box-shadow: inset 0 0 0 1.5px var(--jpm-forest); }
+  .jpm .jpm-btn--ghost:hover { background: var(--jpm-forest); color: #fff; }
+  .jpm .jpm-b2blink { display: inline-flex; align-items: center; min-height: 44px; margin-top: 12px; font-weight: 700; font-size: 0.95rem; color: var(--jpm-forest); text-decoration: underline; text-underline-offset: 3px; }
+  .jpm-offer { margin-top: 12px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; padding: 14px 16px; background: #fbf1dc; border: 1px dashed var(--jpm-turmeric); border-radius: 12px; max-width: 580px; }
+  .jpm-offer__code { font-size: 1rem; color: #5c3d06; }
+  .jpm-offer__code strong { color: #173f2d; }
+  .jpm .jpm-offer__link { font-weight: 700; font-size: 0.92rem; color: var(--jpm-forest); text-decoration: underline; text-underline-offset: 3px; }
+  .jpm-hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 36px; padding: 40px 0 28px; }
+  .jpm-hero__media { position: relative; aspect-ratio: 1 / 1; max-width: 460px; width: 100%; justify-self: end; }
+  .jpm-disc { position: absolute; inset: 6% 4% 4% 6%; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fbefd2 0%, var(--jpm-saffron) 55%, #efcf86 100%); }
+  .jpm-shot { position: absolute; background: #fff; border-radius: 16px; padding: 10px; box-shadow: 0 18px 40px -18px rgba(23, 63, 45, .35); opacity: 0; transform: translateY(14px) rotate(var(--r, 0deg)); animation: jpm-rise .7s cubic-bezier(.2,.7,.2,1) forwards; }
+  .jpm-shot--1 { --r: -4deg; width: 46%; aspect-ratio: 4/5; left: 4%; top: 18%; animation-delay: .05s; }
+  .jpm-shot--2 { width: 50%; aspect-ratio: 4/5; left: 30%; top: 4%; animation-delay: .18s; z-index: 2; }
+  .jpm-shot--3 { --r: 5deg; width: 42%; aspect-ratio: 4/5; right: 2%; top: 40%; animation-delay: .31s; }
+  @keyframes jpm-rise { to { opacity: 1; transform: translateY(0) rotate(var(--r, 0deg)); } }
+  .jpm-trust { list-style: none; margin: 0; padding: 18px 20px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; background: #fff; border: 1px solid var(--jpm-line); border-radius: 14px; }
+  .jpm-trust li { display: flex; gap: 12px; align-items: center; }
+  .jpm-ico { font-size: 1.5rem; line-height: 1; }
+  .jpm-trust strong { display: block; font-size: 0.95rem; color: var(--jpm-forest); }
+  .jpm-trust strong a { text-decoration: underline; text-underline-offset: 3px; }
+  .jpm-trust span { font-size: 0.85rem; color: var(--jpm-muted); }
+  .jpm-block { padding: 48px 0 8px; }
+  .jpm-block > .jpm-h2 { margin-bottom: 22px; }
+  .jpm-bgrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+  .jpm-bcard { display: flex; flex-direction: column; gap: 4px; padding: 14px; background: #fff; border: 1px solid var(--jpm-line); border-radius: 16px; text-decoration: none; transition: border-color .2s ease, box-shadow .2s ease; }
+  .jpm-bcard:hover { border-color: var(--jpm-forest); box-shadow: 0 10px 24px -16px rgba(23,63,45,.4); }
+  .jpm-bcard__img { display: block; aspect-ratio: 1 / 1; margin-bottom: 8px; background: #fbf8f2; border-radius: 10px; overflow: hidden; }
+  .jpm-bcard__name { font-family: var(--font-heading--family, inherit); font-weight: 700; font-size: 1.2rem; color: var(--jpm-forest); }
+  .jpm-bcard__tag { font-size: 0.82rem; color: var(--jpm-muted); line-height: 1.3; min-height: 2.6em; }
+  .jpm-bcard__cta { margin-top: 6px; font-size: 0.85rem; font-weight: 700; color: #8a5f14; }
+  .jpm-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .jpm-cat { display: grid; text-decoration: none; background: var(--tint); border-radius: 18px; padding: 18px 18px 20px; transition: box-shadow .2s ease; }
+  .jpm-cat:hover { box-shadow: inset 0 0 0 2px var(--jpm-forest); }
+  .jpm-cat__img { display: block; aspect-ratio: 4 / 3; margin-bottom: 14px; mix-blend-mode: multiply; }
+  .jpm-cat__name { font-weight: 700; font-size: 1.05rem; color: var(--jpm-forest); line-height: 1.25; }
+  .jpm-cat__count { font-size: 0.85rem; color: var(--jpm-muted); margin-top: 4px; }
+  .jpm-faq { max-width: 780px; padding-bottom: 64px; }
+  .jpm-faq details { border-bottom: 1px solid var(--jpm-line); }
+  .jpm-faq summary { cursor: pointer; list-style: none; padding: 18px 40px 18px 0; position: relative; font-weight: 600; font-size: 1.02rem; color: var(--jpm-forest); }
+  .jpm-faq summary::-webkit-details-marker { display: none; }
+  .jpm-faq summary::after { content: ""; position: absolute; right: 6px; top: 50%; width: 10px; height: 10px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-70%) rotate(45deg); transition: transform .2s ease; }
+  .jpm-faq details[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
+  .jpm-faq p { margin: 0 0 18px; line-height: 1.65; color: var(--jpm-muted); max-width: 68ch; }
+  .jpm-faq p a { color: var(--jpm-forest); font-weight: 600; }
+  @media (max-width: 989px) {
+    .jpm-hero { grid-template-columns: 1fr; padding-top: 16px; gap: 14px; }
+    .jpm-hero__media { justify-self: center; max-width: 240px; }
+    .jpm-trust { grid-template-columns: repeat(2, 1fr); }
+    .jpm-bgrid { grid-template-columns: repeat(3, 1fr); }
+    .jpm-cats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  }
+  @media (max-width: 560px) {
+    .jpm { padding: 0 14px; }
+    .jpm-h1 { font-size: 1.6rem; line-height: 1.12; max-width: none; }
+    .jpm-lead { font-size: 0.98rem; line-height: 1.5; margin: 10px 0 16px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .jpm-actions { gap: 10px; }
+    .jpm-actions .jpm-btn { width: 100%; }
+    .jpm-hero__media { max-width: 200px; }
+    .jpm-offer { padding: 10px 12px; }
+    .jpm-trust { gap: 12px; padding: 14px; }
+    .jpm-bgrid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .jpm-cat { padding: 12px 12px 14px; border-radius: 14px; }
+    .jpm-cat__name { font-size: 0.95rem; }
+  }
+  @media (prefers-reduced-motion: reduce) { .jpm-shot { animation: none; opacity: 1; transform: rotate(var(--r, 0deg)); } .jpm * { transition: none !important; } }
+</style>
+
+{% schema %}
+{ "name": "JP MART – strona główna", "settings": [ {"type": "select", "id": "part", "label": "Część", "default": "top", "options": [{"value": "top", "label": "Hero + zaufanie"}, {"value": "brands", "label": "Marki"}, {"value": "cats", "label": "Kategorie"}, {"value": "faq", "label": "FAQ"}]} ], "presets": [{"name": "JP MART – strona główna"}] }
+{% endschema %}
