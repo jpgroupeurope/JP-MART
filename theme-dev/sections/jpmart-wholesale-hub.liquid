@@ -1,6 +1,6 @@
 {%- comment -%}
   JP MART European Wholesale Hub (dev). Brands, trust points, product-interest catalog (NO prices rendered) and quote form.
-  Add a language: add a {% when 'xx' %} branch below (and in sections/jpmart-b2b-form.liquid). Falls back to Polish.
+  Add a language: add a new when-branch in the case block below (and in sections/jpmart-b2b-form.liquid). Falls back to Polish.
   Tags: lead-new, quote-request, lead-lang-xx. Never grants wholesale access.
 {%- endcomment -%}
 {{ 'jpmart-b2b.css' | asset_url | stylesheet_tag }}
@@ -15,6 +15,7 @@
 {%- assign countries = 'Austria|Belgium|Bulgaria|Croatia|Cyprus|Czechia|Denmark|Estonia|Finland|France|Germany|Greece|Hungary|Ireland|Italy|Latvia|Lithuania|Luxembourg|Malta|Netherlands|Poland|Portugal|Romania|Slovakia|Slovenia|Spain|Sweden' | split: '|' -%}
 {%- assign brand_list = 'Dabur|Vatika|Himalaya|Vicco|Biotique|Hesh|Bajaj|Navratna|Sesa|Medimix|Chandrika|Mysore Sandal|Santoor|Zandu|Samahan (Link Natural)|Organic India|Annam' | split: '|' -%}
 {%- assign skip_vendors = 'Ocean|Silver Touch' | split: '|' -%}
+{%- assign rt_quote = request.path | append: '?sent=quote#b2b-quote' -%}
 
 <div class="jpw" id="b2b-hub">
   <div class="jpw__bar">
@@ -69,7 +70,7 @@
   <div class="jpb2b" id="b2b-quote">
     <h2 class="jpb2b__title">{{ t[22] }}</h2>
     <p>{{ t[23] }}</p>
-    {%- form 'contact', id: 'jpm-b2b-quote', class: 'jpb2b__form', return_to: request.path | append: '?sent=quote' | append: '#b2b-quote' -%}
+    {%- form 'contact', id: 'jpm-b2b-quote', class: 'jpb2b__form', return_to: rt_quote -%}
       {%- if form.errors -%}<div class="jpb2b__err" role="alert">{{ form.errors | default_errors }}</div>{%- endif -%}
       <p class="jpb2b__ok" id="jpw-ok" role="status" hidden>✅ {{ t[37] }}</p>
       <div id="jpw-fields">
