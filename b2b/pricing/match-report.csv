@@ -1,0 +1,129 @@
+no,brand,product,size,price_eur,quote_only,status,variant_id,shopify_title,stock,confidence,carton_qty,moq,note
+1,Dabur,Dabur Amla Jasmine Hair Oil,200 ml,5.42,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+2,Dabur,Dabur Basil Toothpaste,100ml,2.70,False,MATCHED,gid://shopify/ProductVariant/58561854472456,Dabur Pasta do Zębów z Bazylią (Tulsi) 100 ml,72,HIGH,UNCONFIRMED,UNCONFIRMED,
+3,Dabur,Dabur Black Seed Toothpaste,100 ml,2.70,False,MATCHED,gid://shopify/ProductVariant/58581426864392,"Dabur Pasta do Zębów z Czarnuszką (Nigella), Bez Fluoru 100 ml",72,MEDIUM,UNCONFIRMED,UNCONFIRMED,Black Seed=Nigella; Miswak+Czarnuszka 100 g product is different
+4,Dabur,Dabur Charcoal Toothpaste,100ml,2.70,False,MATCHED,gid://shopify/ProductVariant/58561175847176,Dabur Pasta do Zębów z Węglem Aktywnym 100 ml,72,HIGH,UNCONFIRMED,UNCONFIRMED,
+5,Dabur,Dabur Clove Toothpaste,100ml,2.70,False,MATCHED,gid://shopify/ProductVariant/58581426962696,Dabur Pasta do Zębów z Goździkami 100 ml,72,HIGH,UNCONFIRMED,UNCONFIRMED,
+6,Dabur,Dabur Coconut Toothpaste,100ml,2.70,False,MATCHED,gid://shopify/ProductVariant/58581426766088,Dabur Pasta z Olejem Kokosowym i Sodą 100 ml,72,MEDIUM,UNCONFIRMED,UNCONFIRMED,Shopify adds baking soda
+7,Dabur,Dabur Ginger + Mint Toothpaste,100ml,2.70,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+8,Dabur,Dabur Green Tea Toothpaste,100ml,2.70,False,MATCHED,gid://shopify/ProductVariant/58561900544264,Dabur Pasta z Zieloną Herbatą 100 ml,72,HIGH,UNCONFIRMED,UNCONFIRMED,
+9,Dabur,Dabur Herbal Ayurveda Toothpaste,100 g,3.33,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,Shopify 'Dabur 26 Ziołami 100 ml' (58561817936136) - PDF has #9 AND #17 for same product
+10,Dabur,Dabur Hibiscus Shampoo,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+11,Dabur,Dabur Natural Rosemary Shampoo,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+12,Dabur,Dabur Neem Toothpaste,100ml,2.43,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,Shopify 'Neem 100 ml z Organicznym Neem' (58561776255240) fits #12 or #13 - confirm which
+13,Dabur,Dabur Organic Neem Toothpaste,100 g,3.33,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,see #12
+14,Dabur,Dabur Pudina Hara Pearls,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+15,Dabur,Dabur Red Toothpaste,100g,0.90,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+16,Dabur,Dabur Red Toothpaste 200g,200g,1.80,False,MATCHED,gid://shopify/ProductVariant/58577054138632,Dabur Red Pasta 200 g,72,HIGH,UNCONFIRMED,UNCONFIRMED,
+17,Dabur,Dabur Herbal Ayurveda Toothpaste 100 ml,100g,3.33,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,see #9 (duplicate PDF line)
+18,Dabur,Dabur Shilajit Gold,,12.99,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+19,Dabur,Dabur Wild Cactus Hair Oil,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+20,Vatika,Vatika Garlic Hair Mask,500 ml,5.60,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+21,Vatika,Vatika Black Seed Hair Oil,200 ml,3.80,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+22,Vatika,Vatika Garlic Shampoo,400 ml,3.30,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,Shopify 'Szampon z Czosnkiem i Henną 400 ml' (58746757349640) fits #22 and #38 - confirm
+23,Vatika,Vatika Garlic Hair Oil,200 ml,3.80,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+24,Vatika,Vatika Wild Cactus Shampoo,400 ml,4.10,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+25,Vatika,Vatika Wild Cactus Hair Mask,500 ml,5.60,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+26,Vatika,Vatika Cactus Hair Oil,200 ml,3.80,False,MATCHED,gid://shopify/ProductVariant/58581427028232,Vatika Olejek z Kaktusa 200 ml,2,MEDIUM,UNCONFIRMED,UNCONFIRMED,PDF 'Cactus' (not 'Wild Cactus' line)
+27,Vatika,Vatika Argan Shampoo,400 ml,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+28,Vatika,Vatika Argan Hair Oil,200 ml,3.80,False,MATCHED,gid://shopify/ProductVariant/58577780900104,Vatika Naturals Olej Arganowy 200 ml,5,MEDIUM,UNCONFIRMED,UNCONFIRMED,Shopify is Naturals line
+29,Vatika,Vatika Coconut Shampoo,400 ml,4.10,False,MATCHED,gid://shopify/ProductVariant/58746827505928,Vatika Tropikalny Szampon Kokosowy 400 ml,10,MEDIUM,UNCONFIRMED,UNCONFIRMED,confirm same SKU
+30,Vatika,Vatika Coconut / Castor Hair Mask,500 ml,5.60,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+31,Vatika,Vatika Coconut Hair Oil,200 ml,3.80,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,two Shopify products with same barcode 5022496003896 (Vatika Kokosowy 200 ml 58577499586824 / Naturals Wzbogacony 200 ml 58581426667784)
+32,Vatika,Vatika Egg Protein Shampoo,400 ml,3.30,False,MATCHED,gid://shopify/ProductVariant/58746933838088,Vatika Szampon z Białkiem Jaja i Miodem 400 ml,10,HIGH,UNCONFIRMED,UNCONFIRMED,
+33,Vatika,Vatika Egg Protein Hair Mask,500 ml,5.60,False,MATCHED,gid://shopify/ProductVariant/58581427093768,Vatika Naturals Maska z Białkiem Jaja 500 g,24,MEDIUM,UNCONFIRMED,UNCONFIRMED,PDF 500 ml vs Shopify 500 g
+34,Vatika,Vatika Virgin Olive Shampoo,400 ml,4.10,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+35,Vatika,Vatika Sweet Almond Moisturizing Shampoo,400 ml,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+36,Vatika,Vatika Refreshing Lemon / Anti-Dandruff Shampoo,400 ml,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+37,Vatika,Vatika Shikakai Shampoo,400 ml,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+38,Vatika,Vatika Henna Shampoo,400 ml,3.30,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,see #22
+39,Vatika,Vatika Hair Cream - Nourish & Protect,,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+40,Vatika,Vatika Hair Cream - Hair Fall Control,,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+41,Vatika,Vatika Hair Cream - Extreme Moisturising,,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+42,Vatika,Vatika Hair Cream - Volume & Thickness,,3.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+43,Vatika,Vatika Enriched Coconut Oil,150 ml,4.73,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,PDF 150 ml; Shopify Wzbogacony Kokosowy is 200 ml (58581426667784)
+44,Vatika,Vatika Hibiscus Lavender Oil,,5.40,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+45,Himalaya,Himalaya Almond Rose Soap,75 g,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+46,Himalaya,Himalaya Ayurvedic Soap Bar,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+47,Himalaya,Himalaya Bresol,60 tablets,5.50,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+48,Himalaya,Himalaya Cold Balm,10 g,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+49,Himalaya,Himalaya Deep Clean Face Wash,50 ml,1.60,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+50,Himalaya,Himalaya Glow Rose Face Cream,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+51,Himalaya,Himalaya Neem,,5.40,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+52,Himalaya,Himalaya Neem Pomegranate Dental Cream,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+53,Himalaya,Himalaya Nourishing Face Moist Lotion,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+54,Himalaya,Himalaya Nourishing Skin Cream,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+55,Himalaya,Himalaya Olive Extra Nourishing Body Lotion,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+56,Himalaya,Himalaya Ophtha Eye Drops,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+57,Himalaya,Himalaya Protective Sunscreen Lotion,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+58,Himalaya,Himalaya Reosto Tablets,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+59,Himalaya,Himalaya Rumalaya Gel,30 g,2.50,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,"PDF Rumalaya Gel 30 g; Shopify Rumalaya Żel 50 g (58682197541128, stock 0) - size differs"
+60,Himalaya,Himalaya Sandal Glow Soap,75 g,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+61,Himalaya,Himalaya V-Gel,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+62,Himalaya,Himalaya Youth Eternity Edelweiss Face Cream,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+63,Himalaya,Himalaya Youth Eternity Face Serum,,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+64,Himalaya,Himalaya Sparkling White,80 g,1.35,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+65,Himalaya,Himalaya Under Eye Cream,,3.90,False,MATCHED,gid://shopify/ProductVariant/58610965283080,Himalaya Krem pod Oczy 15 ml,10,HIGH,UNCONFIRMED,UNCONFIRMED,
+66,Himalaya,Himalaya Complete Care,150 g,2.43,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+67,Himalaya,Himalaya Complete Care,80 g,1.30,False,MATCHED,gid://shopify/ProductVariant/58611038060808,Himalaya Complete Care 80 g,10,HIGH,UNCONFIRMED,UNCONFIRMED,
+68,Himalaya,Himalaya Active Fresh Gel,80 g,1.30,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+69,Himalaya,Himalaya Aloe Vera Face Wash,200 ML,4.48,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+70,Himalaya,Himalaya Anti Hair Fall Cream,100ML,4.43,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+71,Himalaya,"Himalaya Kajal 2,7 Gm",2.7 g,2.15,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+72,Himalaya,Himalaya Lip Balm 10Ml,10 ml,0.90,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+73,Himalaya,Himalaya Neem/Turmeric Soap,75GM,0.90,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+74,Himalaya,Himalaya Toothpaste Gum Care,150G,2.60,False,MATCHED,gid://shopify/ProductVariant/58572477759752,Himalaya Gum Care 150 g,72,HIGH,UNCONFIRMED,UNCONFIRMED,
+75,Vicco,Vicco Toothpaste,100 g,1.30,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,Shopify Vicco Vajradanti (58577110466824) size not in title; PDF has 100 g / 200 g
+76,Vicco,Vicco Toothpaste,200 g,2.40,False,AMBIGUOUS,,,,,UNCONFIRMED,UNCONFIRMED,see #75
+77,Vicco,Vicco Turmeric Cream,30 g,1.90,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+78,Vicco,Vicco Turmeric Cream,60 g,3.50,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+79,Biotique,Biotique Facewash Neem,150 ml,,True,MATCHED (QUOTE ONLY),gid://shopify/ProductVariant/58638712766728,Biotique Fresh Neem Face Wash 150 ml,0,HIGH,UNCONFIRMED,UNCONFIRMED,QUOTE ONLY; OUT OF STOCK
+80,Biotique,Biotique Facewash Papaya,150 ml,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+81,Biotique,Biotique Facewash Honey Gel,150 ml,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+82,Biotique,Biotique Facewash Morning Nectar Moisturize & Nourish,150 ml,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+83,Biotique,Biotique Facewash Fruit,100 ml,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+84,Biotique,Biotique Face Wash Neem,200 ml,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+85,Hesh,Hesh Skin Tone Up,100 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+86,Hesh,Hesh Tulsi Powder,100 g,1.60,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+87,Hesh,Hesh Harde Powder,50 g,1.60,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+88,Hesh,Hesh Multanimati Powder Face Pack,100 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+89,Hesh,Hesh Rose Powder,50 g,1.60,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+90,Hesh,Hesh Sandal Face Pack,100 g,1.90,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+91,Hesh,Hesh Neem Powder,100 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+92,Hesh,Hesh Lodhar Powder,50 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+93,Hesh,Hesh Manjishta Powder,50 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+94,Hesh,Hesh Maka Powder,50 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+95,Bajaj,Bajaj Almond Drops Hair Oil,190 ml,3.03,False,MATCHED,gid://shopify/ProductVariant/58638606369032,Bajaj Almond Drops 190 ml,0,HIGH,UNCONFIRMED,UNCONFIRMED,OUT OF STOCK
+96,Bajaj,Bajaj Almond Drops Hair Oil,285 ml,4.18,False,MATCHED,gid://shopify/ProductVariant/58638645559560,Bajaj Almond Drops 285 ml,0,HIGH,UNCONFIRMED,UNCONFIRMED,OUT OF STOCK
+97,Navratna,Navratna Ayurvedic Hair Oil,300 ml,5.33,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+98,Sesa,Sesa Hair oil,180 ml,3.48,False,MATCHED,gid://shopify/ProductVariant/58637843988744,Sesa Olejek 180 ml,192,HIGH,UNCONFIRMED,UNCONFIRMED,
+99,Sesa,Sesa Hair oil,90 ml,1.74,False,MATCHED,gid://shopify/ProductVariant/58637863747848,Sesa Olejek 90 ml,96,HIGH,UNCONFIRMED,UNCONFIRMED,
+100,Sesa,Sesa Hair oil,45 ml,0.87,False,MATCHED,gid://shopify/ProductVariant/58637913915656,Sesa Olejek 45 ml,70,HIGH,UNCONFIRMED,UNCONFIRMED,
+101,Medimix,Medimix Herbal Green,125 g,1.10,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+102,Medimix,Medimix Herbal Green,75 g,0.67,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+103,Medimix,Medimix Glycerine Soap,125 g,1.45,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+104,Medimix,Medimix Sandal Soap,75 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+105,Chandrika,Chandrika Soap,125 g,0.92,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+106,Chandrika,Chandrika Soap,75 g,0.67,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+107,Chandrika,Chandrika Sandalwood Soap,75 g,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+108,Mysore Sandal,Mysore Sandal Soap,125 g,1.10,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+109,Mysore Sandal,Mysore Sandal Soap,75 g,0.70,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+110,Hamam,Hamam Neem Soap,100 g,1.50,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+111,Santoor,Santoor Sandal & Turmeric Soap,100 g,0.78,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+112,Lux,Lux Soap,100 g,1.40,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+113,Dettol,Dettol Icy Cool Soap,150 g,1.00,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+114,Zandu,Zandu Balm,,2.70,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+115,Dr. Ortho,Dr. Ortho Ayurvedic Pain Relief Oil,120 ml,6.50,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+116,Samahan (Link Natural),Link Natural Samahan Natural Herbal Drink,10 SAC,2.90,False,MATCHED,gid://shopify/ProductVariant/58600905900296,Samahan 10 Sachets,5,HIGH,UNCONFIRMED,UNCONFIRMED,
+117,Samahan (Link Natural),Link Natural Samahan Natural Herbal Drink,25 SAC,7.70,False,MATCHED,gid://shopify/ProductVariant/58600905933064,Samahan 25 Sachets,0,HIGH,UNCONFIRMED,UNCONFIRMED,OUT OF STOCK; Shopify retail price is 0.00 - fix before sale
+118,Samahan (Link Natural),Link Natural Samahan Natural Herbal Drink,50 sachets,,True,UNMATCHED (QUOTE ONLY),,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+119,Samahan (Link Natural),Link Natural Samahan Natural Herbal Drink,100 SAC,26.94,False,MATCHED,gid://shopify/ProductVariant/58600905965832,Samahan 100 Sachets,0,HIGH,UNCONFIRMED,UNCONFIRMED,OUT OF STOCK; Shopify retail price is 0.00 - fix before sale
+120,Samahan (Link Natural),Swastha Amurtha 7 Szt,,2.95,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+121,Annam,Annam Goond Katira,100 g,1.54,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+122,Patanjali,Patanjali Ghee 450 g,450 g,10.69,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+123,Patanjali,Patanjali Ghee 950 g,950 g,20.23,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+124,Ghee – other brands,GRB Ghee 1 kg,1 kg,20.80,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+125,Ghee – other brands,GRB Ghee 500 g,500 g,10.98,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+126,Ghee – other brands,Khanum Ghee 500 g,500 g,9.82,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+127,Ghee – other brands,Khanum Ghee 1 kg,1 kg,17.91,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
+128,Ghee – other brands,Amul Pure Ghee 1 kg,1 kg,20.23,False,UNMATCHED,,,,,UNCONFIRMED,UNCONFIRMED,No product in Shopify
