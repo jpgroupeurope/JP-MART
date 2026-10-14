@@ -26,20 +26,18 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "page-content": { "type": "page-content", "settings": {}, "blocks": {} }
+        }
       },
-      "block_order": ["heading", "page-content"],
+      "block_order": ["heading"],
       "settings": {
         "content_direction": "column",
-        "gap": 32,
+        "gap": 16,
         "background_color": "{{ settings.color_palette.background }}",
         "padding-block-start": 40,
-        "padding-block-end": 32
+        "padding-block-end": 8
       }
     },
-    "hub": { "type": "jpmart-wholesale-hub", "settings": {} },
-    "b2b_form": { "type": "jpmart-b2b-form", "settings": {} }
+    "hub": { "type": "jpmart-wholesale-hub", "settings": {} }
   },
-  "order": ["main", "hub", "b2b_form"]
+  "order": ["main", "hub"]
 }
