@@ -1,0 +1,360 @@
+{
+ "collections": {
+  "nodes": [
+   {
+    "id": "gid://shopify/Collection/586605920520",
+    "handle": "frontpage",
+    "descriptionHtml": "",
+    "seo": {
+     "title": null,
+     "description": null
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586607100168",
+    "handle": "oral-care",
+    "descriptionHtml": "<p>Ziołowe pasty do zębów z Indii: <strong>Dabur Red, Neem, Miswak, z węglem aktywnym</strong>, Himalaya i Vicco. Wiele bez fluoru. Od 18 zł – weź kilka smaków, a od 99 zł dostawa jest gratis.</p>",
+    "seo": {
+     "title": "Ziołowe Pasty do Zębów bez Fluoru – Dabur, Miswak | JP MART",
+     "description": "Ajurwedyjskie pasty do zębów Dabur Red, Neem, Miswak, z węglem i bez fluoru oraz Himalaya i Vicco. Od 18 zł, darmowa dostawa od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586624008456",
+    "handle": "vatika",
+    "descriptionHtml": "<p>Cała linia <strong>Dabur Vatika</strong> w jednym miejscu: olejki do olejowania, szampony 400 ml, maski 500 g i zestawy do włosów taniej niż osobno. Oryginały z Indii, darmowa dostawa od 99 zł.</p>",
+    "seo": {
+     "title": "Vatika – Olejki, Szampony i Maski do Włosów Dabur | JP MART",
+     "description": "Oryginalne Dabur Vatika z Indii: olejek kokosowy i migdałowy, szampon z czosnkiem, maska 500 g, zestawy. Darmowa dostawa od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586687217928",
+    "handle": "hair-care",
+    "descriptionHtml": "<p>Ajurwedyjskie olejki do włosów, szampony i maski marek Vatika, Dabur, Sesa i Bajaj – naturalne składniki i tradycyjne indyjskie receptury.</p>",
+    "seo": {
+     "title": "Indyjskie Olejki i Szampony do Włosów | JP MART",
+     "description": "Ajurwedyjskie olejki do włosów, szampony i maski marek Vatika, Dabur, Sesa i Bajaj. Naturalna pielęgnacja włosów. Wysyłka w całej Polsce."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586687250696",
+    "handle": "beauty-personal-care",
+    "descriptionHtml": "<p>Indyjskie kosmetyki i produkty do codziennej pielęgnacji od marek Himalaya, Biotique, Dabur i Vatika.</p>",
+    "seo": {
+     "title": "Indyjskie Kosmetyki i Pielęgnacja | JP MART",
+     "description": "Indyjskie kosmetyki i produkty do pielęgnacji od marek Himalaya, Biotique, Dabur i Vatika. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586687349000",
+    "handle": "ayurveda-wellness",
+    "descriptionHtml": "<p>Tradycyjne produkty ajurwedyjskie z Indii: Chyawanprash, herbaty ziołowe, olejki i balsamy marek Dabur, Himalaya i Sesa.</p>",
+    "seo": {
+     "title": "Produkty Ajurwedyjskie Online w Polsce | JP MART",
+     "description": "Produkty ajurwedyjskie z Indii: Chyawanprash, herbaty ziołowe, olejki i balsamy Himalaya, Dabur i Sesa. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586687414536",
+    "handle": "copper-products",
+    "descriptionHtml": "<p>Tradycyjne miedziane szklanki i naczynia z Indii – piękne na prezent i do codziennego użytku.</p>",
+    "seo": {
+     "title": "Miedziane Szklanki i Naczynia z Indii | JP MART",
+     "description": "Tradycyjne miedziane szklanki i naczynia z Indii. Piękne na prezent i do codziennego użytku. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586687447304",
+    "handle": "food-grocery",
+    "descriptionHtml": "<p>Indyjskie produkty spożywcze: ryż Sona Masoori i Ponni, ziołowa herbata Samahan i inne produkty z indyjskiej kuchni.</p>",
+    "seo": {
+     "title": "Indyjskie Produkty Spożywcze Online | JP MART",
+     "description": "Indyjskie produkty spożywcze online: ryż Sona Masoori i Ponni, herbata ziołowa i więcej. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586687480072",
+    "handle": "home-lifestyle",
+    "descriptionHtml": "<p>Kadzidła, stożki zapachowe, podstawki i miedziane naczynia – indyjskie akcesoria do domu i chwil relaksu.</p>",
+    "seo": {
+     "title": "Indyjskie Produkty do Domu | JP MART",
+     "description": "Kadzidła, podstawki, miedziane naczynia i akcesoria do domu z Indii. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586687512840",
+    "handle": "special-offers",
+    "descriptionHtml": "<p>Zestawy i produkty w niższej cenie. Zajrzyj regularnie – nowe oferty pojawiają się na bieżąco.</p>",
+    "seo": {
+     "title": "Promocje i Zestawy | JP MART",
+     "description": "Zestawy i produkty ajurwedyjskie w niższej cenie – pasty do zębów Dabur, olejki Vatika i więcej. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586749509896",
+    "handle": "dabur",
+    "descriptionHtml": "<p>Oryginalne produkty <strong>Dabur</strong> – największej ajurwedyjskiej marki z Indii, założonej w 1884 roku: ziołowe pasty do zębów, Chyawanprash, olejki Amla i cała linia Vatika. Darmowa dostawa od 99 zł.</p>",
+    "seo": {
+     "title": "Dabur – Pasty do Zębów, Chyawanprash, Amla | JP MART",
+     "description": "Oryginalne produkty Dabur z Indii: pasty Dabur Red, Neem, Miswak, Chyawanprash 1 kg, olejek Amla Gold. Darmowa dostawa od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586749706504",
+    "handle": "himalaya",
+    "descriptionHtml": "<p>Oryginalne produkty Himalaya: ziołowe pasty do zębów, krem pod oczy oraz balsam i żel Rumalaya.</p>",
+    "seo": {
+     "title": "Produkty Himalaya Online w Polsce | JP MART",
+     "description": "Oryginalne produkty Himalaya: pasty do zębów, krem pod oczy, Rumalaya i pielęgnacja. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586806165768",
+    "handle": "vicco",
+    "descriptionHtml": "<p>Vicco Vajradanti – tradycyjna ziołowa pasta do zębów z 18 ziół, bez fluoru.</p>",
+    "seo": {
+     "title": "Vicco Vajradanti – Ziołowa Pasta do Zębów | JP MART",
+     "description": "Vicco Vajradanti – ziołowa pasta do zębów z 18 ziół, bez fluoru. Oryginalny produkt z Indii. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/586901192968",
+    "handle": "indian-groceries",
+    "descriptionHtml": "<p>Indyjski ryż Annam w dużych opakowaniach 10 kg: Sona Masoori i Ponni.</p>",
+    "seo": {
+     "title": "Indyjski Ryż Annam – Sona Masoori i Ponni | JP MART",
+     "description": "Indyjski ryż Annam: Sona Masoori i Ponni w opakowaniach 10 kg. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/587305648392",
+    "handle": "sesa",
+    "descriptionHtml": "<p>Ajurwedyjskie olejki do włosów Sesa z Bhringraj, Brahmi i Neem.</p>",
+    "seo": {
+     "title": "Sesa – Ajurwedyjski Olejek do Włosów | JP MART",
+     "description": "Ajurwedyjskie olejki do włosów Sesa z Bhringraj, Brahmi i Neem. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/587314790664",
+    "handle": "face-care",
+    "descriptionHtml": "<p>Ajurwedyjskie produkty do pielęgnacji twarzy, m.in. żel do mycia twarzy Biotique Fresh Neem.</p>",
+    "seo": {
+     "title": "Indyjska Pielęgnacja Twarzy | JP MART",
+     "description": "Ajurwedyjskie produkty do pielęgnacji twarzy, m.in. żel Biotique Fresh Neem. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/587421712648",
+    "handle": "incense-home-fragrance",
+    "descriptionHtml": "<p>Indyjskie kadzidełka, stożki zapachowe, biała szałwia, Palo Santo i kamienne podstawki na kadzidła – do domu, jogi i medytacji.</p>",
+    "seo": {
+     "title": "Kadzidła, Stożki Zapachowe i Palo Santo | JP MART",
+     "description": "Indyjskie kadzidełka, stożki zapachowe, biała szałwia, Palo Santo i podstawki na kadzidła. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/589213368584",
+    "handle": "wellness-starter-kit",
+    "descriptionHtml": "<p>Dopiero zaczynasz przygodę z ajurwedą? Wybraliśmy olejki, kadzidła i naturalne produkty na dobry początek. Świetny pomysł na prezent.</p>",
+    "seo": {
+     "title": "Ajurweda na Start – Wybrane Produkty | JP MART",
+     "description": "Nowy w ajurwedzie? Wybrane olejki, kadzidła i naturalne produkty na dobry początek. Idealne na prezent. Wysyłka w całej Polsce."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/589830357256",
+    "handle": "dabur-vatika-ajurwedyjska-pielegnacja",
+    "descriptionHtml": "<p>Autentyczne indyjskie produkty do pielęgnacji jamy ustnej i włosów – pasty do zębów Dabur oraz oleje, szampony i maski do włosów Vatika. Naturalne składniki, ajurwedyjskie receptury, sprawdzone przez pokolenia.</p>",
+    "seo": {
+     "title": "Dabur i Vatika – Ajurwedyjska Pielęgnacja | JP MART",
+     "description": "Pasty do zębów Dabur i olejki do włosów Vatika w jednym miejscu. Oryginalne indyjskie produkty. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/589989118216",
+    "handle": "herbaty",
+    "descriptionHtml": "<p>Herbaty <strong>Tulsi Organic India</strong> – zielone i ziołowe, z imbirem, kurkumą, rumiankiem i jaśminem. 25 torebek lub wersja liściasta. Darmowa dostawa od 99 zł.</p>",
+    "seo": {
+     "title": "Herbata Tulsi Organic India – Zielona, z Imbirem | JP MART",
+     "description": "Herbaty Tulsi Organic India: zielona Tulsi, z imbirem, kurkumą, rumiankiem i jaśminem. 25 torebek lub liściasta. Wysyłka w całej Polsce."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/589989150984",
+    "handle": "organic-india",
+    "descriptionHtml": "<p>Produkty marki Organic India (A TATA Product): herbaty Tulsi, napary ziołowe i ghee.</p>",
+    "seo": {
+     "title": "Organic India – Herbaty Tulsi i Ghee | JP MART",
+     "description": "Oryginalne produkty Organic India: herbaty Tulsi, zielona herbata, rumianek, imbir i kurkuma oraz ghee Bilona. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590020182280",
+    "handle": "bestsellery",
+    "descriptionHtml": "<p>Najchętniej kupowane produkty w JP MART – pasty do zębów Dabur, olejki Vatika, Chyawanprash, herbaty Tulsi i więcej. Darmowa dostawa od 99 zł.</p>",
+    "seo": {
+     "title": "Bestsellery – Najpopularniejsze Produkty Ajurwedyjskie | JP MART",
+     "description": "Bestsellery JP MART: pasty Dabur, olejki Vatika, Chyawanprash, herbaty Organic India. Oryginalne produkty z Indii. Darmowa dostawa od 99 zł w Polsce."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590020215048",
+    "handle": "kosmetyki-ajurwedyjskie",
+    "descriptionHtml": "<p><strong>Kosmetyki ajurwedyjskie i indyjskie</strong> – oryginalne produkty najpopularniejszych marek z Indii: <strong>Dabur, Vatika, Himalaya, Sesa, Vicco, Bajaj i Biotique</strong>. Olejki do włosów do olejowania, szampony i maski, ziołowe pasty do zębów oraz pielęgnacja twarzy – oparte na roślinach stosowanych w ajurwedzie od pokoleń, takich jak neem, amla, bhringraj, migdały czy kokos.</p><p>Wszystkie kosmetyki wysyłamy z Polski, z <strong>darmową dostawą od 99 zł</strong>. Sklepy i salony zapraszamy do <a href=\"/pages/wholesale-b2b\">współpracy hurtowej B2B</a>. Nie wiesz, od czego zacząć? Przeczytaj nasz <a href=\"/blogs/news/pasta-do-zebow-dabur-ktora-wybrac\">poradnik o pastach Dabur</a>.</p>",
+    "seo": {
+     "title": "Kosmetyki Ajurwedyjskie z Indii – Dabur, Vatika | JP MART",
+     "description": "Kosmetyki ajurwedyjskie z Indii: ziołowe pasty do zębów, olejki i szampony do włosów, Himalaya, Sesa. Oryginały, darmowa dostawa od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590155972872",
+    "handle": "olejki-do-wlosow",
+    "descriptionHtml": "<p>Indyjskie olejki do olejowania włosów: <strong>Vatika kokosowy, migdałowy, arganowy i z białkiem jaja</strong>, Dabur Amla Gold oraz ajurwedyjskie olejki Sesa. Darmowa dostawa od 99 zł.</p>",
+    "seo": {
+     "title": "Olejki do Olejowania Włosów – Vatika, Dabur Amla | JP MART",
+     "description": "Indyjskie olejki do olejowania włosów: Vatika kokosowy, migdałowy, arganowy, Dabur Amla Gold, Sesa. Od 9 zł, darmowa dostawa od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590156005640",
+    "handle": "szampony",
+    "descriptionHtml": "<p>Szampony Vatika z naturalnymi składnikami – czosnek, czarnuszka, kokos, białko jaja.</p>",
+    "seo": {
+     "title": "Indyjskie Szampony do Włosów – Vatika Czosnek, Kokos | JP MART",
+     "description": "Indyjskie szampony Dabur Vatika 400 ml: z czosnkiem i henną, kokosowy, z białkiem jaja i z czarnuszką. Oryginały z Indii. Darmowa dostawa od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590156038408",
+    "handle": "maski-do-wlosow",
+    "descriptionHtml": "<p>Regenerujące maski do włosów Vatika Naturals – głęboka pielęgnacja suchych i zniszczonych włosów.</p>",
+    "seo": {
+     "title": "Maski do Włosów Vatika 500 g – Proteinowa, z Oliwą | JP MART",
+     "description": "Maski do włosów Vatika Naturals 500 g: proteinowa z białkiem jaja i odżywcza z oliwą z oliwek. Duże opakowania, oryginały z Indii. Dostawa gratis od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590156071176",
+    "handle": "zestawy-do-wlosow",
+    "descriptionHtml": "<p>Gotowe zestawy do ajurwedyjskiej pielęgnacji włosów – taniej niż osobno i z darmową dostawą od 99 zł.</p>",
+    "seo": {
+     "title": "Zestawy do Włosów Vatika – Szampon, Maska, Olejek | JP MART",
+     "description": "Zestawy do pielęgnacji włosów Vatika: proteinowy, kokosowy i wzmacniający. Szampon, maska i olejek taniej niż osobno. Darmowa dostawa od 99 zł."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590156103944",
+    "handle": "zestawy",
+    "descriptionHtml": "<p>Wszystkie zestawy JP MART – oszczędzasz i masz darmową dostawę od 99 zł.</p>",
+    "seo": {
+     "title": "Zestawy Dabur i Vatika – Taniej niż Osobno | JP MART",
+     "description": "Zestawy ajurwedyjskie Dabur i Vatika: pasty do zębów, olejki, szampony i maski w niższej cenie. Zestaw 99 zł z darmową dostawą. Oryginały z Indii."
+    }
+   },
+   {
+    "id": "gid://shopify/Collection/590872183048",
+    "handle": "pasty-do-zebow-bez-fluoru",
+    "descriptionHtml": "<p>Ajurwedyjskie <strong>pasty do zębów bez fluoru</strong> z Indii – <a href=\"/products/dabur-red-herbal-toothpaste-200-g\">Dabur Red</a>, <a href=\"/products/dabur-pasta-do-zebow-czarnuszka-100-ml\">Dabur z czarnuszką</a> i <a href=\"/products/vicco-vajradanti-fluoride-free-toothpaste-18-herbs\">Vicco Vajradanti</a>. Ziołowe receptury oparte na tradycji ajurwedy, oryginalne opakowania, wysyłka z Polski. Darmowa dostawa od 99 zł.</p>",
+    "seo": {
+     "title": "Pasta do Zębów bez Fluoru – Ajurwedyjska, Ziołowa | JP MART",
+     "description": "Pasty do zębów bez fluoru z Indii: Dabur Red, Dabur z czarnuszką, Vicco Vajradanti. Ziołowe, ajurwedyjskie receptury. Od 18 zł, darmowa dostawa od 99 zł."
+    }
+   }
+  ]
+ },
+ "products": {
+  "nodes": [
+   {
+    "id": "gid://shopify/Product/12212860223752",
+    "handle": "himalaya-dental-cream-gum-care-toothpaste-150g",
+    "descriptionHtml": "<p><strong>Himalaya Gum Care – ajurwedyjska pasta do zębów na dziąsła, 150 g</strong></p><p>Himalaya Dental Cream Gum Care łączy starożytną wiedzę Ajurwedy z nowoczesną pielęgnacją jamy ustnej. Formuła z <strong>13 ajurwedyjskimi ziołami</strong> nawiązuje do tradycji <em>Danta Swasthya</em> (zdrowia zębów) – dla zdrowych dziąseł i pewnego uśmiechu.</p><p><strong>Najważniejsze zalety:</strong></p><ul>\n<li>\n<strong>13 ziół</strong> – sprawdzona ajurwedyjska receptura do kompleksowej pielęgnacji jamy ustnej</li>\n<li>\n<strong>Wspiera zdrowe dziąsła</strong> – pomaga ograniczyć krwawienie dziąseł</li>\n<li>\n<strong>Świeży oddech</strong> przez cały dzień</li>\n<li>\n<strong>Delikatna dla szkliwa</strong> – do codziennego stosowania</li>\n</ul><p><strong>Dla kogo:</strong> dla osób z wrażliwymi lub krwawiącymi dziąsłami, szukających ziołowej alternatywy dla zwykłej pasty.</p><p><strong>Pojemność:</strong> 150 g</p>",
+    "seo": {
+     "title": "Himalaya Pasta do Zębów Gum Care 150 g – Na Dziąsła | JP MART",
+     "description": "Himalaya Gum Care Dental Cream 150 g – ajurwedyjska pasta do zębów na krwawiące dziąsła i świeży oddech. Szybka wysyłka w całej Polsce z JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Product/12213894676744",
+    "handle": "vicco-vajradanti-fluoride-free-toothpaste-18-herbs",
+    "descriptionHtml": "<p><strong>Vicco Vajradanti</strong> to klasyczna indyjska pasta do zębów <strong>bez fluoru</strong>, oparta na recepturze z <strong>18 ziół</strong> stosowanych w tradycji ajurwedy. Marka Vicco produkuje ją w Indiach od dziesięcioleci.</p><h2>Dlaczego Vicco Vajradanti?</h2><ul>\n<li>\n<strong>Bez fluoru</strong> – dla osób, które wybierają ziołowe receptury.</li>\n<li>\n<strong>18 ziół</strong> w jednej paście – tradycyjna ajurwedyjska pielęgnacja zębów i dziąseł.</li>\n<li>\n<strong>Oryginalny produkt z Indii</strong> w fabrycznym opakowaniu, wysyłany z Polski.</li>\n</ul><h2>Smak</h2><p>Ziołowy, lekko gorzkawy – typowy dla tradycyjnych indyjskich past. Inny niż miętowe pasty z drogerii.</p><h2>Jak stosować?</h2><p>Nałóż niewielką ilość pasty na szczoteczkę, szczotkuj 2–3 minuty i wypłucz usta. Stosuj zgodnie z opakowaniem. Nie połykać. Pełny skład znajdziesz na opakowaniu.</p><h2>Najczęstsze pytania</h2><h3>Czy Vicco Vajradanti ma fluor?</h3><p>Nie – to pasta bez fluoru. Porównaj ją z innymi: <a href=\"/collections/pasty-do-zebow-bez-fluoru\">pasty do zębów bez fluoru</a> (Dabur Red, Dabur z czarnuszką).</p><h3>Szukasz innych past ziołowych?</h3><p>Zobacz <a href=\"/collections/oral-care\">wszystkie ziołowe pasty do zębów</a> lub poradnik <a href=\"/blogs/news/pasta-do-zebow-dabur-ktora-wybrac\">Pasta do zębów Dabur – którą wybrać?</a></p>",
+    "seo": {
+     "title": null,
+     "description": "Vicco Vajradanti – ajurwedyjska pasta do zębów z 18 ziołami, bez fluoru. Tradycyjna receptura do codziennej pielęgnacji zębów i dziąseł. Wysyłka w Polsce."
+    }
+   },
+   {
+    "id": "gid://shopify/Product/12214596698376",
+    "handle": "dabur-miswak-czarnuszka-100-g",
+    "descriptionHtml": "<p><strong>Dabur Miswak z czarnuszką</strong> łączy dwa tradycyjne składniki: <strong>ekstrakt z miswak</strong> (<em>Salvadora persica</em>) oraz <strong>olej z czarnuszki</strong> (<em>Nigella sativa</em>). Ziołowa pasta do codziennej pielęgnacji zębów i dziąseł.</p><h2>Dlaczego ta pasta?</h2><ul>\n<li>\n<strong>Miswak</strong> – tradycyjna „naturalna szczoteczka”.</li>\n<li>\n<strong>Czarnuszka</strong> – wspiera zdrowe zęby i dziąsła.</li>\n<li>\n<strong>Świeży oddech</strong> i dokładne oczyszczanie.</li>\n<li>\n<strong>100 g</strong> – na wiele tygodni.</li>\n</ul><h2>Smak</h2><p>Ziołowy, zbalansowany – łagodniejszy niż wersja wybielająca.</p><h2>Jak stosować?</h2><p>Nałóż niewielką ilość pasty na szczoteczkę, szczotkuj 2–3 minuty i wypłucz usta. Stosuj zgodnie z opakowaniem. Nie połykać. Przechowywać w miejscu niedostępnym dla dzieci.</p><h2>Najczęstsze pytania</h2><h3>Miswak z czarnuszką czy wybielający?</h3><p>Ta wersja stawia na pielęgnację dziąseł, a <a href=\"/products/dabur-miswak-wybielajaca-100-g\">Dabur Miswak wybielający</a> – na jaśniejszy uśmiech.</p><p>Wszystkie <a href=\"/collections/oral-care\">pasty do zębów</a>.</p>",
+    "seo": {
+     "title": "Dabur Miswak z Czarnuszką – Pasta do Zębów 100 g | JP MART",
+     "description": "Dabur Miswak z czarnuszką – pasta do zębów z ekstraktem z miswak i olejem z czarnuszki, 100 g. Ziołowa pielęgnacja. Wysyłka w całej Polsce."
+    }
+   },
+   {
+    "id": "gid://shopify/Product/12214596731144",
+    "handle": "dabur-miswak-wybielajaca-100-g",
+    "descriptionHtml": "<p><strong>Dabur Miswak</strong> to ziołowa, wybielająca pasta do zębów z <strong>ekstraktem z miswak</strong> – gałązki drzewa <em>Salvadora persica</em>, którą od wieków używano do czyszczenia zębów w Indiach, na Bliskim Wschodzie i w Afryce.</p><h2>Dlaczego Dabur Miswak?</h2><ul>\n<li>\n<strong>Miswak</strong> – „naturalna szczoteczka” znana od stuleci.</li>\n<li>\n<strong>Efekt wybielający</strong> – pomaga usuwać osad i codzienne przebarwienia.</li>\n<li>\n<strong>Wzmacnia zęby i dziąsła</strong> dzięki ziołowej formule.</li>\n<li>\n<strong>100 g</strong> – na wiele tygodni.</li>\n</ul><h2>Smak</h2><p>Ziołowy, lekko korzenny – charakterystyczny dla miswak.</p><h2>Jak stosować?</h2><p>Nałóż niewielką ilość pasty na szczoteczkę, szczotkuj 2–3 minuty i wypłucz usta. Stosuj zgodnie z opakowaniem. Nie połykać. Przechowywać w miejscu niedostępnym dla dzieci.</p><h2>Najczęstsze pytania</h2><h3>Co to jest miswak?</h3><p>Miswak (siwak) to gałązka drzewa <em>Salvadora persica</em>, tradycyjnie żuta i używana jak szczoteczka do zębów.</p><h3>Jest też wersja z czarnuszką?</h3><p>Tak – <a href=\"/products/dabur-miswak-czarnuszka-100-g\">Dabur Miswak z czarnuszką</a>.</p>",
+    "seo": {
+     "title": "Dabur Miswak Wybielająca Pasta do Zębów 100 g | JP MART",
+     "description": "Dabur Miswak – ziołowa pasta wybielająca z ekstraktem z miswak (Salvadora persica), 100 g. Tradycja w tubce. Wysyłka w całej Polsce – JP MART."
+    }
+   },
+   {
+    "id": "gid://shopify/Product/12220635054344",
+    "handle": "himalaya-complete-care-toothpaste-80-g",
+    "descriptionHtml": "<h2>Himalaya Complete Care – ziołowa pasta do zębów 80 g</h2><p><strong>Himalaya Complete Care 80 g</strong> to ziołowa pasta do zębów do codziennej higieny zębów i dziąseł. Łączy tradycyjne składniki ajurwedyjskie z nowoczesnymi składnikami pielęgnacyjnymi – dla uczucia świeżości i czystości.</p><p>Formuła zawiera m.in. <strong>neem, miswak, granat, triphalę i babool</strong> – składniki tradycyjnie stosowane w ajurwedyjskiej pielęgnacji jamy ustnej.</p><h3>Najważniejsze cechy</h3><ul>\n<li>Do codziennej pielęgnacji zębów i dziąseł</li>\n<li>Wspiera regularne usuwanie płytki nazębnej</li>\n<li>Pozostawia uczucie czystości i świeżości</li>\n<li>Zawiera ekstrakty ziołowe i ajurwedyjskie</li>\n<li>Zawiera fluor</li>\n<li>Waga netto: 80 g</li>\n</ul><h3>Sposób użycia</h3><p>Nałóż niewielką ilość pasty na szczoteczkę. Myj zęby dokładnie przez co najmniej dwie minuty, najlepiej dwa razy dziennie, a następnie wypłucz usta. Stosuj zgodnie z instrukcją na opakowaniu.</p><h3>Skład</h3><p>Sorbitol, Aqua, Hydrated Silica, Glycerin, Silica, Sodium Lauryl Sulphate, Aroma, Xanthan Gum, Titanium Dioxide, Sodium Saccharin, Menthol, Sodium Benzoate, Punica Granatum Pericarp Extract, Potassium Sorbate, Calcium Fluoride, Zanthoxylum Alatum Fruit Extract, Acacia Arabica Stem Bark Extract, Terminalia Chebula Fruit Extract, Terminalia Ballerica Fruit Extract, Emblica Officinalis Fruit Extract, Embelia Ribes Fruit Extract, Azadirachta Indica Bark Extract, Vitex Negundo Extract, Thymol, Citric Acid, Salvadora Persica Stem Extract, Acacia Farnesiana Flower/Stem Extract, Acacia Catechu Bark Powder, Mimosops Elengi Flower Extract, Limonene.</p><h3>Zawartość fluoru</h3><p>Zawiera fluor. Według informacji o produkcie pasta zawiera około <strong>500 ppm fluoru</strong>.</p><h3>Ważne</h3><p>Aktualny skład, informacje o fluorze, sposób użycia i ostrzeżenia zawsze sprawdzaj na opakowaniu produktu.</p>",
+    "seo": {
+     "title": "Himalaya Complete Care Pasta do Zębów 80 g | JP MART",
+     "description": "Ziołowa pasta do zębów Himalaya Complete Care 80 g z neem, miswak, granatem, triphalą i babool. Wysyłka w całej Polsce – JP MART."
+    }
+   }
+  ]
+ },
+ "articles": {
+  "nodes": [
+   {
+    "id": "gid://shopify/Article/630209085704",
+    "handle": "palo-santo-white-sage-oudh-incense-guide-jp-mart",
+    "body": "<p>Kadzidło to coś więcej niż zapach – dobrze dobrany aromat potrafi zmienić nastrój całego pomieszczenia: z ciepłego i przytulnego na świeży, drzewny lub głęboki. W tym poradniku porównujemy najpopularniejsze zapachy z naszej kolekcji <a href=\"/collections/incense-home-fragrance\">kadzideł i zapachów do domu</a>.</p>\n<h2>1. Palo Santo – ciepłe i drzewne</h2>\n<p>Palo Santo ma ciepły, lekko słodki, drzewny zapach. To dobry wybór na wieczór, do medytacji i kącika relaksu. Wybierz:</p>\n<ul>\n<li><a href=\"/products/balaji-palo-santo-incense-sticks-15-g\">Kadzidełka Balaji Palo Santo 15 g</a></li>\n<li><a href=\"/products/balaji-palo-santo-incense-cones\">Stożki zapachowe Balaji Palo Santo</a></li>\n<li><a href=\"/products/ayurvedic-incense-cones-palo-santo\">Stożki zapachowe Palo Santo</a></li>\n<li><a href=\"/products/ishom-palo-santo-with-oudh-incense-holder\">Kadzidło Ishom Palo Santo z oudh + podstawka</a></li>\n</ul>\n<h2>2. Biała szałwia – świeża i ziołowa</h2>\n<p>Wolisz coś świeższego? <a href=\"/products/balaji-white-sage-incense-sticks-15-g\">Kadzidełka Balaji biała szałwia 15 g</a> mają wyrazisty, ziołowy zapach – dobrze sprawdzają się w salonie, miejscu pracy czy podczas jogi.</p>\n<h2>3. Oudh – głęboki i luksusowy</h2>\n<p>Oudh (drewno agarowe) ma bogaty, drzewno-balsamiczny charakter, ceniony w perfumerii. Jeśli lubisz mocniejsze zapachy, spróbuj połączeń <a href=\"/products/ishom-palo-santo-with-oudh-incense-holder\">Palo Santo z oudh</a> lub <a href=\"/products/ishom-patchouli-with-oudh-incense-holder\">paczuli z oudh</a> – oba zestawy mają podstawkę.</p>\n<h2>4. Paczula – ziemista i wyrazista</h2>\n<p>Paczula ma ziemisty, lekko słodki zapach. W połączeniu z oudh tworzy głęboki, warstwowy aromat na wieczorny relaks.</p>\n<h2>5. Nag Champa – indyjski klasyk</h2>\n<p><a href=\"/products/ayurvedic-incense-cones-nag-champa\">Stożki Nag Champa</a> to tradycyjny, ciepły i kwiatowy zapach – świetny na początek przygody z indyjskimi kadzidłami. Lubisz kwiatowe nuty? Spróbuj też <a href=\"/products/ayurvedic-incense-cones-lavender\">lawendy</a>, a jeśli wolisz ciepłe i żywiczne – <a href=\"/products/ayurvedic-incense-cones-dragon-s-blood\">Dragon’s Blood</a>.</p>\n<h2>Kadzidełka czy stożki?</h2>\n<h3>Kadzidełka (patyczki)</h3>\n<p>Najprostsza forma: włóż patyczek do podstawki, zapal końcówkę, zdmuchnij płomień i pozwól mu się tlić.</p>\n<h3>Stożki zapachowe</h3>\n<p>Kompaktowe i intensywne. Połóż stożek na niepalnej podstawce, np. <a href=\"/products/2-in-1-stone-incense-burner-aroma-burner-024\">kamiennej podstawce 2w1</a>, i zapal czubek.</p>\n<h2>Który zapach wybrać?</h2>\n<ul>\n<li>\n<strong>Palo Santo</strong> – jeśli lubisz ciepłe, drzewne aromaty.</li>\n<li>\n<strong>Biała szałwia</strong> – jeśli wolisz świeże i ziołowe.</li>\n<li>\n<strong>Oudh</strong> – jeśli lubisz głębokie, luksusowe zapachy.</li>\n<li>\n<strong>Paczula</strong> – jeśli lubisz ziemiste nuty.</li>\n<li>\n<strong>Nag Champa</strong> – jeśli chcesz klasyczny indyjski zapach.</li>\n</ul>\n<h2>Bezpieczeństwo</h2>\n<p>Zawsze pal kadzidła na niepalnej podstawce, z dala od firan i łatwopalnych przedmiotów, w wietrzonym pomieszczeniu. Nie zostawiaj tlącego się kadzidła bez nadzoru.</p>\n<p>Całą ofertę znajdziesz w kategorii <a href=\"/collections/incense-home-fragrance\">kadzidła i zapachy do domu</a>. Wysyłamy w całej Polsce, a od 99 zł dostawa jest darmowa.</p>"
+   },
+   {
+    "id": "gid://shopify/Article/630462415112",
+    "handle": "pasta-do-zebow-dabur-ktora-wybrac",
+    "body": "<p>Pasty do zębów <strong>Dabur</strong> to jedne z najpopularniejszych ajurwedyjskich past na świecie. W JP MART mamy ich kilkanaście rodzajów – i najczęściej słyszymy pytanie: <em>która jest najlepsza dla mnie?</em> Poniżej porównujemy wszystkie warianty, żeby ułatwić Ci wybór.</p><h2>Czym różnią się ajurwedyjskie pasty Dabur od zwykłych?</h2><p>Pasty Dabur opierają się na ziołach i ekstraktach roślinnych stosowanych w Indiach od pokoleń – takich jak neem, goździk, miswak, bazylia (tulsi) czy czarnuszka. Każda pasta ma inną „bohaterską” roślinę i inny charakter: od łagodnej i odświeżającej po intensywnie ziołową. Część wariantów nie zawiera fluoru – tę informację zawsze znajdziesz w opisie produktu i na opakowaniu.</p><h2>Porównanie past Dabur</h2><table>\n<thead><tr>\n<th>Pasta</th>\n<th>Główny składnik</th>\n<th>Charakter</th>\n<th>Dla kogo</th>\n</tr></thead>\n<tbody>\n<tr>\n<td><a href=\"/products/dabur-red-herbal-toothpaste-200-g\">Dabur Red 200 g</a></td>\n<td>mieszanka ziół, m.in. goździk i mięta</td>\n<td>intensywna, ziołowa</td>\n<td>klasyka dla całej rodziny, duże opakowanie</td>\n</tr>\n<tr>\n<td><a href=\"/products/dabur-neem-antibacterial-toothpaste-with-organic-neem-100-ml\">Dabur Neem 100 ml</a></td>\n<td>organiczny neem</td>\n<td>ziołowa, lekko gorzka nuta</td>\n<td>dla osób dbających o dziąsła</td>\n</tr>\n<tr>\n<td><a href=\"/products/dabur-activated-charcoal-toothpaste-with-organic-pepper-ginger\">Dabur z węglem aktywnym 100 ml</a></td>\n<td>węgiel aktywny, pieprz, imbir</td>\n<td>wybielająca</td>\n<td>dla osób chcących jaśniejszego uśmiechu</td>\n</tr>\n<tr>\n<td><a href=\"/products/dabur-miswak-ziolowa-wybielajaca-pasta-do-zebow-100-g-dla-silnych-zebow-i-jasniejszych-usmiechow-naturalna-pielegnacja-jamy-ustnej-wzbogacona-czystym-ekstraktem-miswak\">Dabur Miswak 100 g</a></td>\n<td>ekstrakt z miswak</td>\n<td>tradycyjna, oczyszczająca</td>\n<td>dla fanów tradycyjnej pielęgnacji</td>\n</tr>\n<tr>\n<td><a href=\"/products/dabur-organiczna-pasta-do-zebow-clove-100-ml-pasta-do-zebow-do-ochrony-jamy-ustnej-zapobiega-ubytkom-lagodzi-bol-zeba-i-utrzymuje-higiene-jamy-ustnej\">Dabur z goździkami 100 ml</a></td>\n<td>goździk, wapń</td>\n<td>ciepła, korzenna</td>\n<td>dla lubiących wyrazisty, korzenny smak</td>\n</tr>\n<tr>\n<td><a href=\"/products/dabur-pasta-do-zebow-z-czarnymi-nasionami-z-organicznymi-czarnymi-nasionami-100-ml\">Dabur z czarnuszką 100 ml</a></td>\n<td>olej z czarnuszki</td>\n<td>łagodna, bez fluoru</td>\n<td>dla szukających pasty bez fluoru</td>\n</tr>\n<tr>\n<td><a href=\"/products/dabur-fresh-breath-basil-toothpaste-100-ml\">Dabur z bazylią 100 ml</a></td>\n<td>bazylia (tulsi)</td>\n<td>świeża</td>\n<td>dla zależących na świeżym oddechu</td>\n</tr>\n<tr>\n<td><a href=\"/products/dabur-ayurvedic-toothpaste-26-herbs-100-ml\">Dabur 26 ziół 100 ml</a></td>\n<td>26 ziół ajurwedyjskich</td>\n<td>kompleksowa</td>\n<td>dla chcących „wszystkiego po trochu”</td>\n</tr>\n</tbody>\n</table><h2>Najpopularniejsze warianty w skrócie</h2><h3>Dabur Red – klasyk od dziesięcioleci</h3><p><a href=\"/products/dabur-red-herbal-toothpaste-200-g\"><img src=\"https://cdn.shopify.com/s/files/1/1061/4574/3112/files/1200x1200_product_media_60001-61000_dabur100g-p.webp?v=1788169155&amp;width=600\" alt=\"Dabur Red ziołowa pasta do zębów – opakowanie\" width=\"600\" loading=\"lazy\" style=\"max-width:320px;height:auto;display:block;margin:12px 0;\"></a>Dabur Red to jedna z najbardziej znanych past Dabur. Ma wyraźny ziołowy smak i występuje w dużym opakowaniu 200 g, więc wystarcza na długo. Dobry wybór na początek przygody z ajurwedyjskimi pastami.</p><h3>Dabur Neem – dla dziąseł</h3><p><a href=\"/products/dabur-neem-antibacterial-toothpaste-with-organic-neem-100-ml\"><img src=\"https://cdn.shopify.com/s/files/1/1061/4574/3112/files/r1hd9zieph3r.jpg?v=1787919951&amp;width=600\" alt=\"Dabur Neem pasta do zębów 100 ml – opakowanie\" width=\"600\" loading=\"lazy\" style=\"max-width:320px;height:auto;display:block;margin:12px 0;\"></a>Neem to jedna z najważniejszych roślin w ajurwedzie, tradycyjnie stosowana w higienie jamy ustnej. Pasta Dabur Neem ma ziołowy, lekko gorzkawy smak, który wiele osób docenia właśnie za „naturalny” charakter.</p><h3>Dabur z węglem aktywnym – dla jaśniejszego uśmiechu</h3><p><a href=\"/products/dabur-activated-charcoal-toothpaste-with-organic-pepper-ginger\"><img src=\"https://cdn.shopify.com/s/files/1/1061/4574/3112/files/Dabur-Pasta-do-zebow-wybielajace-z-Weglem-Aktywnym-100g-BEZ-FLUORU.webp?v=1787917560&amp;width=600\" alt=\"Dabur pasta do zębów z węglem aktywnym 100 ml – opakowanie\" width=\"600\" loading=\"lazy\" style=\"max-width:320px;height:auto;display:block;margin:12px 0;\"></a>Węgiel aktywny w połączeniu z pieprzem i imbirem pomaga usuwać codzienne przebarwienia. Idealna dla kawoszy i miłośników herbaty.</p><h3>Dabur Miswak – tradycja w tubce</h3><p><a href=\"/products/dabur-miswak-ziolowa-wybielajaca-pasta-do-zebow-100-g-dla-silnych-zebow-i-jasniejszych-usmiechow-naturalna-pielegnacja-jamy-ustnej-wzbogacona-czystym-ekstraktem-miswak\"><img src=\"https://cdn.shopify.com/s/files/1/1061/4574/3112/files/264d53da.jpg?v=1788204726&amp;width=600\" alt=\"Dabur Miswak wybielająca pasta do zębów 100 g – opakowanie\" width=\"600\" loading=\"lazy\" style=\"max-width:320px;height:auto;display:block;margin:12px 0;\"></a>Miswak to gałązka drzewa Salvadora persica, od wieków używana do czyszczenia zębów. Dabur zamknął tę tradycję w wygodnej paście – dostępnej w wersji wybielającej i z czarnuszką.</p><h2>Nie możesz się zdecydować? Wybierz zestaw</h2><p>Jeśli chcesz przetestować kilka smaków, sprawdź <a href=\"/products/zestaw-3-past-do-zebow-dabur-wegiel-neem-i-26-ziol\">Zestaw 3 past Dabur – Węgiel, Neem i 26 Ziół</a>. To trzy najpopularniejsze warianty w cenie niższej niż przy zakupie osobno. Pełny wybór znajdziesz w kategorii <a href=\"/collections/oral-care\">pasty do zębów</a>, a pozostałe produkty marki w kolekcji <a href=\"/collections/dabur\">Dabur</a>.</p><h2>Najczęstsze pytania</h2><h3>Która pasta Dabur jest bez fluoru?</h3><p>Bez fluoru jest m.in. Dabur z czarnuszką oraz ziołowa pasta <a href=\"/collections/vicco\">Vicco Vajradanti</a>. Skład każdej pasty zawsze sprawdzaj w opisie produktu i na opakowaniu.</p><h3>Czy pasty Dabur nadają się do codziennego stosowania?</h3><p>Tak, pasty Dabur są przeznaczone do codziennego mycia zębów zgodnie z instrukcją na opakowaniu.</p><h3>Czy sprzedajecie oryginalne pasty Dabur?</h3><p>Tak – w JP MART sprzedajemy oryginalne produkty Dabur w fabrycznych opakowaniach, z wysyłką w całej Polsce. Przy zamówieniu od 99 zł dostawa standardowa jest darmowa.</p>"
+   },
+   {
+    "id": "gid://shopify/Article/630477783304",
+    "handle": "olejowanie-wlosow-jak-olejowac-poradnik",
+    "body": "<p><strong>Olejowanie włosów</strong> to jeden z najpopularniejszych rytuałów pielęgnacyjnych w Polsce – i jednocześnie tradycja, która w Indiach trwa od pokoleń. Dobrze dobrany olej potrafi zmiękczyć, wygładzić i nabłyszczyć włosy. W tym poradniku wyjaśniamy krok po kroku, <strong>jak olejować włosy</strong>, jaki olej wybrać i jak uniknąć najczęstszych błędów.</p><h2>Co daje olejowanie włosów?</h2><ul>\n<li>\n<strong>Miękkość i gładkość</strong> – włosy łatwiej się rozczesują.</li>\n<li>\n<strong>Blask</strong> – wygładzone łuski włosa lepiej odbijają światło.</li>\n<li>\n<strong>Ochrona końcówek</strong> przed przesuszeniem.</li>\n<li>\n<strong>Mniej puszenia</strong>, zwłaszcza przy suchym powietrzu.</li>\n</ul><h2>Jaki olej do jakiej porowatości?</h2><p>Porowatość to sposób, w jaki włos przyjmuje i zatrzymuje wodę i składniki. Orientacyjnie:</p><table>\n<thead><tr>\n<th>Porowatość</th>\n<th>Jakie włosy</th>\n<th>Olej</th>\n</tr></thead>\n<tbody>\n<tr>\n<td><strong>Niska</strong></td>\n<td>proste, gładkie, trudno się kręcą, długo schną</td>\n<td><a href=\"/products/dabur-vatika-coconut-hair-oil-200-ml\">Vatika kokosowy</a></td>\n</tr>\n<tr>\n<td><strong>Średnia</strong></td>\n<td>lekko falowane, czasem się puszą</td>\n<td>\n<a href=\"/products/vatika-multivitamin-almond-hair-oil-200-ml\">Vatika migdałowy</a>, <a href=\"/products/dabur-vatika-naturals-argan-hair-oil-200-ml\">Vatika arganowy</a>\n</td>\n</tr>\n<tr>\n<td><strong>Wysoka</strong></td>\n<td>kręcone, suche, zniszczone farbowaniem, szybko schną</td>\n<td>\n<a href=\"/products/dabur-vatika-naturals-argan-hair-oil-200-ml\">Vatika arganowy</a> + proteiny, np. <a href=\"/products/dabur-vatika-egg-protein-multivitamin-hair-oil\">Vatika z białkiem jaja</a>\n</td>\n</tr>\n</tbody>\n</table><p>Nie znasz swojej porowatości? Zacznij od <strong>oleju migdałowego</strong> – jest lekki i pasuje większości włosów.</p><h2>Jak olejować włosy – krok po kroku</h2><ol>\n<li>\n<strong>Rozgrzej olej</strong> w dłoniach (olej kokosowy w chłodne dni tężeje – ogrzej butelkę w ciepłej wodzie).</li>\n<li>\n<strong>Nałóż olej</strong> na długość i końcówki. Na skórę głowy – tylko jeśli nie masz skłonności do przetłuszczania.</li>\n<li>\n<strong>Zostaw na 30 minut do kilku godzin</strong> – możesz zawinąć włosy w ręcznik lub czepek. Wiele osób olejuje na noc.</li>\n<li>\n<strong>Zemulguj olej</strong> – przed szamponem nałóż na włosy odrobinę odżywki lub wody i rozmasuj.</li>\n<li>\n<strong>Umyj włosy szamponem dwukrotnie</strong> – np. <a href=\"/products/szampon-z-czarnuszka-vatika-400ml-dabur-black-seed-shampoo\">Vatika z czarnuszką</a>.</li>\n<li>Na koniec nałóż <strong>maskę lub odżywkę</strong>, np. <a href=\"/products/vatika-naturals-virgin-olive-maska-do-wlosow-gleboko-odzywiajaca-500-g\">Vatika z oliwą z oliwek</a>.</li>\n</ol><h2>Olejowanie na sucho czy na mokro?</h2><ul>\n<li>\n<strong>Na sucho</strong> – olej na suche, nieumyte włosy. Najprostsza metoda, dobra na początek.</li>\n<li>\n<strong>Na mokro</strong> – olej na lekko wilgotne włosy. Łatwiej się rozprowadza, zużywasz mniej produktu.</li>\n<li>\n<strong>Na odżywkę/maskę</strong> – kilka kropel oleju wymieszanych z maską. Szybka opcja pod prysznicem.</li>\n</ul><h2>Jak często olejować?</h2><p>Zwykle wystarczy <strong>1–2 razy w tygodniu</strong>. Włosy bardzo suche mogą potrzebować częściej, cienkie i przetłuszczające się – rzadziej.</p><h2>Najczęstsze błędy</h2><ul>\n<li>\n<strong>Za dużo oleju</strong> – włosy są potem ciężkie i trudne do domycia.</li>\n<li>\n<strong>Jednokrotne mycie</strong> – olej lubi dwa mycia szamponem.</li>\n<li>\n<strong>Zły olej do porowatości</strong> – jeśli włosy są matowe lub obciążone, spróbuj innego oleju.</li>\n</ul><h2>Najczęstsze pytania</h2><h3>Czy olejowanie powoduje wypadanie włosów?</h3><p>Nie. Podczas masowania i mycia mogą wypaść włosy, które i tak były w fazie wypadania – to naturalne.</p><h3>Czy można olejować włosy farbowane?</h3><p>Tak, olejowanie jest często polecane właśnie przy włosach suchych po farbowaniu.</p><h3>Jaki olej Vatika na początek?</h3><p><a href=\"/products/vatika-multivitamin-almond-hair-oil-200-ml\">Vatika migdałowy</a> – lekki, uniwersalny i łatwo się zmywa. Wszystkie olejki znajdziesz w <a href=\"/collections/vatika\">kolekcji Vatika</a>, a pełną ofertę w kategorii <a href=\"/collections/kosmetyki-ajurwedyjskie\">kosmetyki ajurwedyjskie</a>. Przy zamówieniu od 99 zł dostawa jest darmowa.</p>"
+   },
+   {
+    "id": "gid://shopify/Article/630633562376",
+    "handle": "co-to-jest-chyawanprash",
+    "body": "<p><strong>Chyawanprash</strong> (pisany też <em>Chyavanprash</em> lub po polsku <em>czjawanprasz</em>) to jeden z najbardziej znanych produktów ajurwedy – gęsta, ziołowo-owocowa pasta, którą w Indiach od pokoleń je się codziennie, szczególnie jesienią i zimą. W tym poradniku wyjaśniamy, co zawiera, jak smakuje i jak go jeść.</p>\n<h2>Z czego składa się Chyawanprash?</h2>\n<p>Podstawą jest <strong>amla</strong>, czyli agrest indyjski (<em>Emblica officinalis</em>) – owoc naturalnie bogaty w witaminę C. Do amli dodaje się kilkadziesiąt ziół, owoców i przypraw. W <a href=\"/products/dabur-chyawanprash-1-kg\">Dabur Chyawanprash</a> jest ich ponad 40, m.in. ashwagandha, pippali (długi pieprz), kardamon i cynamon. Całość łączy się z cukrem lub miodem i ghee, dzięki czemu powstaje konsystencja gęstego dżemu. Pełny skład konkretnego produktu zawsze znajdziesz na etykiecie.</p>\n<h2>Jak smakuje Chyawanprash?</h2>\n<p>Jest <strong>słodko-kwaśny, z korzenną, rozgrzewającą nutą</strong> przypraw. Dla wielu osób przypomina gęste powidła z cynamonem i kardamonem. Smak jest intensywny – jeśli dopiero zaczynasz, spróbuj go z ciepłym mlekiem.</p>\n<h2>Jak jeść Chyawanprash?</h2>\n<ul>\n<li>\n<strong>Prosto z łyżeczki</strong> – tradycyjnie rano.</li>\n<li>\n<strong>Z ciepłym mlekiem</strong> – rozpuść łyżeczkę w kubku mleka (także roślinnego).</li>\n<li>\n<strong>Na pieczywie</strong> – jak dżem.</li>\n</ul>\n<p>Dorośli zwykle jedzą 1 łyżeczkę 1–2 razy dziennie, ale zawsze stosuj się do porcji podanej na etykiecie. Kobiety w ciąży i karmiące oraz osoby przyjmujące leki powinny wcześniej skonsultować się z lekarzem.</p>\n<h2>Chyawanprash, Chyavanprash czy czjawanprasz?</h2>\n<p>To ten sam produkt. Nazwa pochodzi z sanskrytu, dlatego w różnych językach zapisuje się ją inaczej.</p>\n<h2>Jak przechowywać?</h2>\n<p>W suchym i chłodnym miejscu, szczelnie zamknięty. Po otwarciu używaj zawsze suchej łyżeczki. Słoik 1 kg przy jednej łyżeczce dziennie starcza na wiele tygodni.</p>\n<h2>Gdzie kupić oryginalny Chyawanprash?</h2>\n<p>W JP MART sprzedajemy oryginalny <a href=\"/products/dabur-chyawanprash-1-kg\">Dabur Chyawanprash 1 kg</a> w fabrycznym opakowaniu, z wysyłką z Polski. Przy zamówieniu od 99 zł dostawa jest darmowa – np. dwa słoiki albo słoik z <a href=\"/collections/herbaty\">herbatą Tulsi</a>. Inne produkty ajurwedyjskie znajdziesz w kategorii <a href=\"/collections/ayurveda-wellness\">Ajurweda i zdrowie</a>.</p>\n<p><em>Chyawanprash jest suplementem diety i nie zastępuje zróżnicowanej diety ani zdrowego trybu życia.</em></p>"
+   },
+   {
+    "id": "gid://shopify/Article/630633595144",
+    "handle": "herbata-tulsi-co-to-jest-jak-parzyc",
+    "body": "<p><strong>Tulsi</strong>, czyli <em>bazylia święta</em> (Ocimum sanctum), to jedno z najważniejszych ziół ajurwedy. W Indiach rośnie w wielu ogrodach i od wieków parzy się z niej napary. Najbardziej znane herbaty Tulsi produkuje marka <a href=\"/collections/organic-india\">Organic India</a>. Poniżej wyjaśniamy, czym się różnią i jak je parzyć.</p>\n<h2>Jak smakuje Tulsi?</h2>\n<p>Tulsi ma ziołowy, lekko pieprzny i korzenny smak – inny niż bazylia używana w kuchni włoskiej. W herbatach Organic India łączy się ją z zieloną herbatą, imbirem, kurkumą, rumiankiem czy jaśminem.</p>\n<h2>Herbaty Tulsi Organic India – porównanie</h2>\n<table>\n<thead><tr>\n<th>Herbata</th>\n<th>Smak</th>\n<th>Kofeina</th>\n</tr></thead>\n<tbody>\n<tr>\n<td><a href=\"/products/organic-india-tulsi-green-tea-classic-25-tea-bags\">Tulsi Green Tea Classic</a></td>\n<td>zielona herbata + tulsi</td>\n<td>tak (zielona herbata)</td>\n</tr>\n<tr>\n<td><a href=\"/products/organic-india-tulsi-green-tea-honey-lemon-25-bags\">Tulsi Green Tea Miód i Cytryna</a></td>\n<td>łagodna, cytrusowa</td>\n<td>tak (zielona herbata)</td>\n</tr>\n<tr>\n<td><a href=\"/products/organic-india-tulsi-green-tea-lemon-ginger-25-bags\">Tulsi Green Tea Cytryna i Imbir</a></td>\n<td>orzeźwiająca</td>\n<td>tak (zielona herbata)</td>\n</tr>\n<tr>\n<td><a href=\"/products/organic-india-tulsi-jasmine-green-tea-25-tea-bags\">Tulsi z Jaśminem</a></td>\n<td>kwiatowa</td>\n<td>tak (zielona herbata)</td>\n</tr>\n<tr>\n<td><a href=\"/products/organic-india-tulsi-ginger-tea-25-tea-bags\">Tulsi z Imbirem</a></td>\n<td>rozgrzewająca</td>\n<td>bez kofeiny</td>\n</tr>\n<tr>\n<td><a href=\"/products/organic-india-tulsi-turmeric-ginger-tea-25-bags\">Tulsi z Kurkumą i Imbirem</a></td>\n<td>korzenna</td>\n<td>bez kofeiny</td>\n</tr>\n<tr>\n<td><a href=\"/products/organic-india-tulsi-honey-chamomile-tea-25-tea-bags\">Tulsi z Rumiankiem i Miodem</a></td>\n<td>łagodna, na wieczór</td>\n<td>bez kofeiny</td>\n</tr>\n</tbody>\n</table>\n<p>Wolisz herbatę sypaną? Wybierz <a href=\"/products/organic-india-tulsi-ginger-loose-leaf-tea-100g\">Tulsi z imbirem liściastą 100 g</a>. Do herbat bez tulsi należy <a href=\"/products/organic-india-simply-chamomile-herbata-rumiankowa-25-torebek\">rumiankowa Simply Chamomile</a>.</p>\n<h2>Jak parzyć herbatę Tulsi?</h2>\n<ol>\n<li>Zalej torebkę wodą – do herbat z zieloną herbatą ok. 80–90°C, do ziołowych wrzątkiem.</li>\n<li>Parz zwykle 3–5 minut (dokładny czas podaje opakowanie).</li>\n<li>Wersje ziołowe możesz osłodzić miodem lub dodać plaster cytryny.</li>\n</ol>\n<h2>Najczęstsze pytania</h2>\n<h3>Czy herbata Tulsi ma kofeinę?</h3>\n<p>Wersje z zieloną herbatą zawierają kofeinę. Tulsi z imbirem, z kurkumą i z rumiankiem są bez kofeiny.</p>\n<h3>Czym różni się tulsi od zwykłej bazylii?</h3>\n<p>To inny gatunek bazylii – ma bardziej korzenny, pieprzny aromat i w Indiach używa się jej głównie do naparów.</p>\n<p>Wszystkie smaki znajdziesz w kategorii <a href=\"/collections/herbaty\">herbaty Tulsi</a>. Do herbaty dobierz <a href=\"/products/dabur-chyawanprash-1-kg\">Chyawanprash</a> – od 99 zł dostawa jest darmowa.</p>"
+   },
+   {
+    "id": "gid://shopify/Article/630634381576",
+    "handle": "olejek-amla-na-wlosy-jak-stosowac",
+    "body": "<p><strong>Amla</strong> (agrest indyjski, <em>Phyllanthus emblica</em>) to owoc, który od wieków występuje w ajurwedzie – w Chyawanprashu, w ziołowych mieszankach i właśnie w olejkach do włosów. W Indiach olejowanie włosów olejkiem z amli to codzienny rytuał przekazywany z pokolenia na pokolenie. Poniżej wyjaśniamy, jak go stosować i czego się realnie spodziewać.</p>\n<h2>Co to jest olejek amla?</h2>\n<p>Olejek amla to zwykle <strong>olej bazowy</strong> (np. kokosowy, sezamowy lub mineralny) z dodatkiem <strong>ekstraktu z owoców amli</strong>. Czysty owoc amli nie daje oleju – dlatego olejki różnią się składem w zależności od producenta. Zawsze warto czytać skład na opakowaniu.</p>\n<p><a href=\"/products/dabur-amla-gold-olejek-do-wlosow-300-ml-amla-migdaly-i-henna\">Dabur Amla Gold</a> łączy <strong>amle, migdały i hennę</strong>. To jeden z najbardziej rozpoznawalnych olejków do włosów w Indiach.</p>\n<h2>Jak stosować olejek amla – krok po kroku</h2>\n<ol>\n<li>\n<strong>Nakładaj na suche lub lekko wilgotne włosy.</strong> Wlej na dłoń niewielką ilość olejku (na włosy do ramion zwykle wystarcza 1–2 łyżki).</li>\n<li>\n<strong>Wmasuj w skórę głowy</strong> opuszkami palców przez 3–5 minut, a resztę rozprowadź na długości włosów.</li>\n<li>\n<strong>Pozostaw na 1–2 godziny</strong> albo na noc (pod mały ręcznik lub czepek, aby nie pobrudzić poduszki).</li>\n<li>\n<strong>Umyj włosy szamponem</strong> – często trzeba umyć je dwa razy, żeby dokładnie zmyć olej. Dobrze sprawdzają się <a href=\"/collections/szampony\">szampony Vatika 400 ml</a>.</li>\n</ol>\n<p>Pełny poradnik techniki (na sucho, na mokro, z odżywką) znajdziesz tutaj: <a href=\"/blogs/news/olejowanie-wlosow-jak-olejowac-poradnik\">Olejowanie włosów – jak olejować krok po kroku</a>.</p>\n<h2>Jak często olejować włosy olejkiem amla?</h2>\n<p>Najczęściej <strong>1–2 razy w tygodniu</strong>. Przy włosach przetłuszczających się lepiej zacząć od raz w tygodniu i krótszego czasu (ok. 1 godziny). Przy suchych, długich włosach można olejować częściej.</p>\n<h2>Na jakie włosy?</h2>\n<ul>\n<li>\n<strong>Długie, suche i matowe włosy</strong> – olej wygładza i ułatwia rozczesywanie.</li>\n<li>\n<strong>Włosy po farbowaniu i stylizacji</strong> – jako regularna, odżywcza pielęgnacja.</li>\n<li>\n<strong>Osoby, które lubią masaż skóry głowy</strong> – olejowanie to dobra okazja do regularnego masażu.</li>\n</ul>\n<p>Jeśli masz bardzo cienkie włosy, które łatwo tracą objętość, zacznij od niewielkiej ilości olejku tylko na długość.</p>\n<h2>Olejek amla na siwe włosy i na porost – co jest prawdą?</h2>\n<p>W internecie często można przeczytać, że olejek amla „cofa siwienie” albo „przyspiesza porost”. <strong>Nie ma wiarygodnych dowodów, że olejek amla przywraca kolor siwym włosom</strong> ani że gwarantuje szybszy porost. Amla ma za to długą tradycję w ajurwedyjskiej pielęgnacji, a regularne olejowanie może sprawić, że włosy będą bardziej miękkie, gładkie i lśniące. Jeśli włosy wypadają nagle lub mocno – skonsultuj się z lekarzem lub trychologiem.</p>\n<h2>Jakie efekty można zauważyć?</h2>\n<p>Po kilku tygodniach regularnego olejowania wiele osób zauważa <strong>gładsze, mniej puszące się i łatwiejsze w rozczesywaniu włosy</strong>. Efekty zależą od rodzaju włosów, częstotliwości i całej pielęgnacji.</p>\n<h2>Bezpieczeństwo</h2>\n<ul>\n<li>Przed pierwszym użyciem zrób <strong>test uczuleniowy</strong> – niewielką ilość olejku nałóż za uchem i odczekaj 24 godziny.</li>\n<li>Unikaj kontaktu z oczami.</li>\n<li>Olejek zawiera hennę – osoby z rozjaśnionymi włosami mogą najpierw sprawdzić go na małym pasemku.</li>\n</ul>\n<h2>Inne olejki do olejowania włosów</h2>\n<p>Jeśli szukasz alternatywy, porównaj <a href=\"/products/dabur-vatika-coconut-hair-oil-200-ml\">Vatika kokosowy</a>, <a href=\"/products/vatika-multivitamin-almond-hair-oil-200-ml\">Vatika migdałowy</a>, <a href=\"/products/dabur-vatika-naturals-argan-hair-oil-200-ml\">Vatika arganowy</a> i <a href=\"/products/sesa-ajurwedyjski-olejek-do-wlosow-180-ml\">Sesa z 18 ziołami</a>. Całą ofertę znajdziesz w kategorii <a href=\"/collections/olejki-do-wlosow\">olejki do włosów</a>.</p>\n<h2>Najczęstsze pytania</h2>\n<h3>Czy olejek amla można zostawić na noc?</h3>\n<p>Tak, to popularny sposób. Zabezpiecz poduszkę ręcznikiem i rano dokładnie umyj włosy.</p>\n<h3>Czy olejek amla nakładać na mokre czy suche włosy?</h3>\n<p>Tradycyjnie na suche. Na lekko wilgotnych włosach olej łatwiej się rozprowadza i zwykle wystarczy go mniej.</p>\n<h3>Gdzie kupić olejek amla?</h3>\n<p>Oryginalny <a href=\"/products/dabur-amla-gold-olejek-do-wlosow-300-ml-amla-migdaly-i-henna\">Dabur Amla Gold 300 ml</a> kupisz w JP MART z wysyłką z Polski. Darmowa dostawa od 99 zł – łatwo ją osiągnąć, dobierając szampon lub maskę Vatika.</p>"
+   },
+   {
+    "id": "gid://shopify/Article/630634414344",
+    "handle": "indyjskie-kosmetyki-do-wlosow-co-wybrac",
+    "body": "<p>Indyjskie kosmetyki do włosów to przede wszystkim <strong>olejki do olejowania, szampony z roślinnymi ekstraktami i duże maski</strong>. W Polsce najczęściej wybierane są marki <strong>Dabur Vatika</strong>, <strong>Dabur Amla</strong> i <strong>Sesa</strong>. Ten przewodnik pomoże Ci dobrać produkty do swoich włosów – bez obietnic „cudownych efektów”.</p>\n<h2>Szybki wybór – co dla jakich włosów?</h2>\n<table>\n<thead><tr>\n<th>Twoje włosy</th>\n<th>Olejek</th>\n<th>Szampon</th>\n<th>Maska</th>\n</tr></thead>\n<tbody>\n<tr>\n<td>Suche, matowe, puszące się</td>\n<td>\n<a href=\"/products/dabur-vatika-naturals-argan-hair-oil-200-ml\">Vatika arganowy</a> lub <a href=\"/products/dabur-vatika-coconut-hair-oil-200-ml\">kokosowy</a>\n</td>\n<td><a href=\"/products/vatika-tropical-coconut-multivitamin-shampoo-400-ml\">Vatika kokosowy</a></td>\n<td><a href=\"/products/vatika-maska-do-wlosow-oliwa-500g\">Vatika z oliwą 500 g</a></td>\n</tr>\n<tr>\n<td>Słabe, łamliwe</td>\n<td><a href=\"/products/dabur-vatika-egg-protein-multivitamin-hair-oil\">Vatika z białkiem jaja</a></td>\n<td><a href=\"/products/vatika-egg-protein-shampoo-400-ml\">Vatika z białkiem jaja i miodem</a></td>\n<td><a href=\"/products/vatika-maska-do-wlosow-bialko-jaja-500g\">Vatika proteinowa 500 g</a></td>\n</tr>\n<tr>\n<td>Wypadające, przerzedzone (pielęgnacja wzmacniająca)</td>\n<td><a href=\"/products/sesa-ajurwedyjski-olejek-do-wlosow-180-ml\">Sesa 18 ziół</a></td>\n<td><a href=\"/products/vatika-garlic-shampoo-400-ml\">Vatika z czosnkiem i henną</a></td>\n<td>–</td>\n</tr>\n<tr>\n<td>Długie, do regularnego olejowania</td>\n<td>\n<a href=\"/products/dabur-amla-gold-olejek-do-wlosow-300-ml-amla-migdaly-i-henna\">Dabur Amla Gold</a> lub <a href=\"/products/vatika-multivitamin-almond-hair-oil-200-ml\">Vatika migdałowy</a>\n</td>\n<td><a href=\"/products/szampon-z-czarnuszka-vatika-400ml-dabur-black-seed-shampoo\">Vatika z czarnuszką</a></td>\n<td><a href=\"/products/vatika-maska-do-wlosow-oliwa-500g\">Vatika z oliwą</a></td>\n</tr>\n</tbody>\n</table>\n<p>Przy nagłym lub silnym wypadaniu włosów kosmetyki nie zastąpią wizyty u lekarza lub trychologa.</p>\n<h2>1. Olejki do włosów – serce indyjskiej pielęgnacji</h2>\n<p>Olejowanie to w Indiach codzienność. Olej nakłada się na skórę głowy i długość włosów na 1–2 godziny lub na noc, a potem zmywa szamponem.</p>\n<ul>\n<li>\n<strong>Vatika kokosowy</strong> – klasyk, najlepszy na początek.</li>\n<li>\n<strong>Vatika migdałowy</strong> – lżejszy, z migdałami i sezamem.</li>\n<li>\n<strong>Vatika arganowy</strong> – do wygładzania suchych, puszących się włosów.</li>\n<li>\n<strong>Dabur Amla Gold</strong> – amla, migdały i henna (<a href=\"/blogs/news/olejek-amla-na-wlosy-jak-stosowac\">jak stosować olejek amla</a>).</li>\n<li>\n<strong>Sesa</strong> – ajurwedyjska mieszanka 18 ziół, 5 olejów i mleka, z aplikatorem do skóry głowy.</li>\n</ul>\n<p>Technika krok po kroku: <a href=\"/blogs/news/olejowanie-wlosow-jak-olejowac-poradnik\">Olejowanie włosów – poradnik</a>. Wszystkie oleje: <a href=\"/collections/olejki-do-wlosow\">olejki do włosów</a>.</p>\n<h2>2. Szampony Vatika 400 ml</h2>\n<p>Po olejowaniu potrzebny jest szampon, który dobrze domywa olej. Szampony Vatika mają duże opakowania 400 ml i różne warianty: <strong>z czosnkiem i henną</strong> (wzmacniający), <strong>kokosowy</strong> (nawilżenie i objętość), <strong>z białkiem jaja i miodem</strong> (proteinowy) oraz <strong>z czarnuszką</strong>. Zobacz: <a href=\"/collections/szampony\">indyjskie szampony</a>.</p>\n<h2>3. Maski do włosów 500 g</h2>\n<p>Maski Vatika Naturals to duże, 500-gramowe słoiki – starczają na długo. <strong>Proteinowa z białkiem jaja</strong> sprawdza się przy włosach słabych i łamliwych, a <strong>z oliwą z oliwek</strong> przy suchych i szorstkich. Zobacz: <a href=\"/collections/maski-do-wlosow\">maski do włosów</a>.</p>\n<h2>4. Zestawy – cała rutyna taniej</h2>\n<p>Jeśli chcesz zacząć od razu z pełną rutyną (olejek + szampon + maska), wybierz zestaw – kosztuje mniej niż produkty kupione osobno:</p>\n<ul>\n<li><a href=\"/products/vatika-zestaw-proteinowy-szampon-maska-i-olejek-z-bialkiem-jaja\">Zestaw proteinowy z białkiem jaja</a></li>\n<li><a href=\"/products/vatika-zestaw-kokosowy-szampon-kokosowy-maska-z-oliwa-olejek-kokosowy\">Zestaw kokosowy</a></li>\n<li><a href=\"/products/zestaw-wzmacniajacy-wlosy-szampon-czosnkowy-maska-olejek-sesa\">Zestaw wzmacniający z czosnkiem</a></li>\n</ul>\n<p>Wszystkie: <a href=\"/collections/zestawy-do-wlosow\">zestawy do włosów</a>.</p>\n<h2>Czy indyjskie kosmetyki do włosów są oryginalne?</h2>\n<p>W JP MART sprzedajemy oryginalne produkty Dabur, Vatika i Sesa w fabrycznych opakowaniach. Na opakowaniu znajdziesz producenta i pełny skład. Część produktów Vatika jest produkowana przez Dabur dla rynku europejskiego i bliskowschodniego, dlatego opakowania mogą różnić się od wersji indyjskich.</p>\n<h2>Najczęstsze pytania</h2>\n<h3>Od czego zacząć przygodę z indyjską pielęgnacją włosów?</h3>\n<p>Od jednego olejku (np. Vatika kokosowy) i szamponu, który dobrze go domywa. Olejuj 1–2 razy w tygodniu przez kilka tygodni i obserwuj włosy.</p>\n<h3>Czy Vatika to Dabur?</h3>\n<p>Tak – Vatika to marka należąca do indyjskiej firmy Dabur.</p>\n<h3>Ile kosztuje dostawa?</h3>\n<p>W Polsce dostawa jest darmowa od 99 zł. Zestaw do włosów lub olejek + szampon + maska zwykle pozwalają przekroczyć ten próg.</p>"
+   },
+   {
+    "id": "gid://shopify/Article/630729801992",
+    "handle": "miswak-co-to-jest-jak-stosowac-gdzie-kupic",
+    "body": "<h2>Co to jest miswak?</h2><p>Miswak to gałązka drzewa <em>Salvadora persica</em>, od wieków używana w Indiach, na Bliskim Wschodzie i w Afryce jako naturalna „szczoteczka” do zębów. Dziś ekstrakt z miswak znajdziesz też w ziołowych pastach do zębów.</p><h2>Miswak patyczek czy pasta z miswak?</h2><p>Patyczek miswak to tradycyjna forma: końcówkę gałązki rozgryza się na włókna i używa jak szczoteczki. Pasta z ekstraktem miswak to wygodniejsza wersja do codziennego szczotkowania zwykłą szczoteczką. Smak jest ziołowy, lekko korzenny – inny niż w miętowych pastach z drogerii.</p><h2>Jak stosować pastę Dabur Miswak?</h2><p>Nałóż niewielką ilość pasty na szczoteczkę, szczotkuj 2–3 minuty i wypłucz usta. Stosuj zgodnie z opakowaniem. Nie połykać. Przechowywać w miejscu niedostępnym dla dzieci.</p><h2>Którą pastę Dabur Miswak wybrać?</h2><ul>\n<li>\n<a href=\"/products/dabur-miswak-wybielajaca-100-g\">Dabur Miswak wybielająca 100 g</a> – ziołowa pasta z ekstraktem miswak, smak lekko korzenny.</li>\n<li>\n<a href=\"/products/dabur-miswak-czarnuszka-100-g\">Dabur Miswak z czarnuszką 100 g</a> – ekstrakt miswak i olej z czarnuszki, smak łagodniejszy.</li>\n</ul><h2>Gdzie kupić miswak?</h2><p>Pasty Dabur Miswak kupisz w JP MART z wysyłką z Polski; dostawa jest darmowa od 99 zł. Zobacz wszystkie <a href=\"/collections/oral-care\">ziołowe pasty do zębów</a> lub porównanie w poradniku <a href=\"/blogs/news/pasta-do-zebow-dabur-ktora-wybrac\">Pasta do zębów Dabur – którą wybrać?</a>.</p>"
+   }
+  ]
+ }
+}
