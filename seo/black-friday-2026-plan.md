@@ -42,3 +42,10 @@ To create (after approval): one code, e.g. `BF2026`, start 27 Nov 00:00, end 30 
 - Dev theme banner v3 links to /collections/black-friday and shows "Extra 10%" + code BF2026 in the live phase.
 - Risk: bundle stock is tiny (2, 5, 2 units; 99 zl set 5). Restock before 27 Nov or the campaign sells out in hours.
 - Before publishing the dev theme: turn off "Preview: show live phase now".
+
+## Update 30 Oct 2026 (owner: run from today, stock exists, add item offer)
+- BF2026 now ACTIVE from 30 Oct 2026, ends 30 Nov 23:59 CET.
+- New code BF3 (id gid://shopify/DiscountCodeNode/2183425818888): 10% on products in collection `dabur` (41 products incl. Vatika) when the cart has 3+ of them; once per customer; no combining with other product/order discounts; ACTIVE 30 Oct - 30 Nov.
+- Known gap: collection `dabur` also contains the 3 Vatika bundles and the 99 zl set, so BF3 can apply to them too. Low risk (stock 2-5), owner may want product-level scope.
+- BLOCKER FOR ORDERS: ~15 ACTIVE products in `dabur` show 0 stock in Shopify (e.g. Dabur Red 100 ml, Aloe, Ginger-Mint, Miswak 170 g, Amla 300 ml, Vatika almond/rosemary/argan shampoos). Owner says stock exists; quantities must be corrected in Shopify (Products > Inventory) or sent to the assistant for set-inventory. Never invent quantities.
+- Dev theme banner v5 shows both codes; dates default to 30 Oct - 30 Nov; shows only after the dev theme is published by the owner.
