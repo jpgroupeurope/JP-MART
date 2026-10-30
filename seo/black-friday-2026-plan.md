@@ -49,3 +49,9 @@ To create (after approval): one code, e.g. `BF2026`, start 27 Nov 00:00, end 30 
 - Known gap: collection `dabur` also contains the 3 Vatika bundles and the 99 zl set, so BF3 can apply to them too. Low risk (stock 2-5), owner may want product-level scope.
 - BLOCKER FOR ORDERS: ~15 ACTIVE products in `dabur` show 0 stock in Shopify (e.g. Dabur Red 100 ml, Aloe, Ginger-Mint, Miswak 170 g, Amla 300 ml, Vatika almond/rosemary/argan shampoos). Owner says stock exists; quantities must be corrected in Shopify (Products > Inventory) or sent to the assistant for set-inventory. Never invent quantities.
 - Dev theme banner v5 shows both codes; dates default to 30 Oct - 30 Nov; shows only after the dev theme is published by the owner.
+
+## Stock update 30 Oct 2026 (owner: "quantities each 72 pcs")
+- Finding: the ~10 products showing 0 stock were NOT tracked (inventory tracking off), so they were already purchasable without limit. Correction to the earlier "blocker" note.
+- Done: tracking enabled and available set to 72 for 10 items (Vatika almond/rosemary/argan shampoo, Vatika cactus mask, Dabur Amla 300 ml, Dabur Miswak 170 g, Dabur Ginger-Mint, Dabur Aloe, Dabur Red 100 ml, Zestaw 3 past Dabur). Also raised to 72: Dabur Amla Gold, Vatika shampoos (egg/coconut/garlic/nigella), Vatika oils (cactus, coconut x2, argan, egg, almond), Vatika olive mask. Not touched: items already 72+ (toothpastes, Sesa 192), Chyawanprash 22, Vatika egg mask 24.
+- NOT possible via API: 4 bundle products (99 zl set, Vatika coconut/protein/strengthening) - Shopify returns NON_MUTABLE_INVENTORY_ITEM. Their stock still shows 5/2/5/2. Owner must edit quantity in Shopify admin (Products > product > Inventory), or check Shopify Bundles component setup.
+- The 72 figure comes from the owner; it was not verified against a physical count.
