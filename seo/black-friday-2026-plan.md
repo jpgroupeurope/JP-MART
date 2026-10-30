@@ -34,3 +34,11 @@ To create (after approval): one code, e.g. `BF2026`, start 27 Nov 00:00, end 30 
 2. Approve creating the code and (optionally) the Black Friday collection.
 3. Preview the dev theme, then tell me what to change.
 4. Publishing is yours.
+
+## Executed 30 Oct 2026 (owner chose: 10% bundles, no combining, create collection)
+- Discount code BF2026 (id gid://shopify/DiscountCodeNode/2183422869768): 10% on the 3 Vatika bundles (coconut, protein, strengthening), once per customer, start 27 Nov 00:00 CET, end 30 Nov 23:59 CET, status SCHEDULED. Does not combine with product/order discounts (WELCOME10, FIRST10 etc.); free-shipping discounts may combine.
+- Excluded on purpose: "Zestaw Dabur & Vatika 99 zl" (already a promo price with free delivery) and "Zestaw 3 past Dabur" (sold out).
+- Collection /collections/black-friday (id gid://shopify/Collection/592685138184): 3 Vatika bundles + the 99 zl set. NOTE: it is published now (visible before the sale); the code works only from 27 Nov.
+- Dev theme banner v3 links to /collections/black-friday and shows "Extra 10%" + code BF2026 in the live phase.
+- Risk: bundle stock is tiny (2, 5, 2 units; 99 zl set 5). Restock before 27 Nov or the campaign sells out in hours.
+- Before publishing the dev theme: turn off "Preview: show live phase now".
