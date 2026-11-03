@@ -220,12 +220,14 @@
     .jps-ship__inner { flex-direction: column; align-items: stretch; gap: 6px; }
     .jps-ship__text { white-space: normal; font-size: 0.85rem; text-align: center; }
     .jpm-pdp-trust { grid-template-columns: 1fr; }
-    /* Compact Shopify cookie banner on mobile (buttons and functionality unchanged; verify selectors in a live preview) */
-    #shopify-pc__banner { max-height: 36vh !important; overflow-y: auto !important; padding: 12px 14px !important; }
-    #shopify-pc__banner h2 { font-size: 15px !important; margin: 0 0 6px !important; }
-    #shopify-pc__banner p { font-size: 12.5px !important; line-height: 1.35 !important; margin: 0 0 8px !important; }
-    #shopify-pc__banner__btns { display: flex !important; flex-wrap: wrap !important; gap: 8px !important; }
-    #shopify-pc__banner__btns button { flex: 1 1 28% !important; min-height: 44px !important; font-size: 13px !important; padding: 0 8px !important; }
+    /* Compact Shopify cookie banner (Shopify Customer Privacy markup; Accept/Reject/Preferences all stay visible, no consent pre-selected) */
+    #shopify-pc__banner { max-height: none !important; overflow: visible !important; padding: 10px 12px !important; }
+    #shopify-pc__banner .shopify-pc__banner__wrapper { gap: 6px !important; padding: 0 !important; }
+    #shopify-pc__banner h2 { font-size: 14px !important; margin: 0 0 4px !important; }
+    #shopify-pc__banner p { font-size: 12px !important; line-height: 1.35 !important; margin: 0 0 6px !important; }
+    #shopify-pc__banner .shopify-pc__banner__btns { display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; gap: 6px !important; margin: 0 !important; width: 100% !important; }
+    #shopify-pc__banner .shopify-pc__banner__btns button { flex: 1 1 calc(50% - 6px) !important; min-height: 44px !important; font-size: 13px !important; padding: 0 8px !important; margin: 0 !important; }
+    #shopify-pc__banner .shopify-pc__banner__btn-manage-prefs { order: 3 !important; flex-basis: 100% !important; min-height: 40px !important; }
   }
   @media (max-width: 749px) {
     .product-card .product-grid__card p[role="heading"] { font-size: 14px !important; }
