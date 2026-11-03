@@ -1,14 +1,14 @@
 {%- assign jpm_contact_url = routes.root_url | append: '/pages/contact' | replace: '//', '/' -%}
 {%- assign jpm_b2b_url = routes.root_url | append: '/pages/wholesale-b2b' | replace: '//', '/' -%}
-{%- assign jpm_handles = 'kosmetyki-ajurwedyjskie,oral-care,hair-care,herbaty,ayurveda-wellness,incense-home-fragrance' | split: ',' -%}
-{%- assign jpm_tints = '#eaf1eb,#fbf1dc,#f5e9e4,#eef0f7,#f3efe3,#e8f1ef' | split: ',' -%}
+{%- assign jpm_handles = 'food-grocery,kosmetyki-ajurwedyjskie,hair-care,oral-care,herbaty,ayurveda-wellness,incense-home-fragrance,home-lifestyle' | split: ',' -%}
+{%- assign jpm_tints = '#eaf1eb,#fbf1dc,#f5e9e4,#eef0f7,#f3efe3,#e8f1ef,#fbf1dc,#eaf1eb' | split: ',' -%}
 {%- assign jpm_brand_handles = 'dabur,vatika,himalaya,organic-india,vicco,sesa' | split: ',' -%}
 {%- assign jpm_brand_names = 'Dabur,Vatika,Himalaya,Organic India,Vicco,Sesa' | split: ',' -%}
 
 {%- case request.locale.iso_code -%}
 {%- when 'en' -%}
   {%- assign t_h1 = 'Ayurvedic & Indian cosmetics, delivered across Poland and Europe' -%}
-  {%- assign t_lead = 'Original Dabur, Vatika, Himalaya and Organic India – toothpastes, hair oils, shampoos, teas and Chyawanprash. Natural ingredients and traditional recipes.' -%}
+  {%- assign t_lead = 'Indian groceries, cosmetics and Ayurvedic care: original Dabur, Vatika, Himalaya, Organic India and Annam rice – shipped from Poland.' -%}
   {%- assign t_btn1 = 'Shop bestsellers' -%}{%- assign t_btn2 = 'Ayurvedic cosmetics' -%}
   {%- assign t_b2bcta = 'Wholesale for European businesses – Apply for B2B access' -%}
   {%- assign t_offer = '🎁 <strong>10% off</strong> your first order with code <strong>WELCOME10</strong>' -%}
@@ -20,7 +20,7 @@
   {%- assign t_brands = 'Shop by brand' -%}{%- assign t_see = 'Shop' -%}
   {%- assign t_tags = 'Toothpastes & Chyawanprash|Hair oils, shampoos, masks|Personal care & toothpaste|Tulsi teas & ghee|Vajradanti herbal toothpaste|Ayurvedic hair oil' | split: '|' -%}
   {%- assign t_cats = 'Shop by category' -%}
-  {%- assign t_names = 'Ayurvedic cosmetics,Toothpaste,Hair care,Tulsi & Ayurvedic teas,Ayurveda & wellness,Incense & home fragrance' | split: ',' -%}
+  {%- assign t_names = 'Indian groceries & rice,Ayurvedic cosmetics,Hair care,Toothpaste,Tulsi & Ayurvedic teas,Ayurveda & wellness,Incense & home fragrance,Home & lifestyle' | split: ',' -%}
   {%- assign t_faq = 'Frequently asked questions' -%}{%- assign t_contact = 'Go to contact' -%}
   {%- capture q1 -%}Are the products original?{%- endcapture -%}
   {%- capture a1 -%}Yes. We sell original products from Dabur, Vatika, Himalaya, Organic India, Vicco and other brands, in factory packaging, shipped from Poland.{%- endcapture -%}
@@ -32,7 +32,7 @@
   {%- capture a4 -%}Yes – we supply businesses in Poland and other EU countries. Send a wholesale inquiry and we will confirm prices, quantities, availability and delivery for your order.{%- endcapture -%}
 {%- when 'de' -%}
   {%- assign t_h1 = 'Ayurvedische & indische Kosmetik – Versand in ganz Europa' -%}
-  {%- assign t_lead = 'Original Dabur, Vatika, Himalaya und Organic India – Zahnpasta, Haaröle, Shampoos, Tees und Chyawanprash. Natürliche Inhaltsstoffe, traditionelle Rezepturen.' -%}
+  {%- assign t_lead = 'Indische Lebensmittel, Kosmetik und Ayurveda: Originale von Dabur, Vatika, Himalaya, Organic India und Annam-Reis – Versand aus Polen.' -%}
   {%- assign t_btn1 = 'Bestseller ansehen' -%}{%- assign t_btn2 = 'Ayurvedische Kosmetik' -%}
   {%- assign t_b2bcta = 'Großhandel für europäische Unternehmen – B2B-Zugang beantragen' -%}
   {%- assign t_offer = '🎁 <strong>10 % Rabatt</strong> auf die erste Bestellung mit <strong>WELCOME10</strong>' -%}
@@ -44,7 +44,7 @@
   {%- assign t_brands = 'Nach Marke einkaufen' -%}{%- assign t_see = 'Ansehen' -%}
   {%- assign t_tags = 'Zahnpasta & Chyawanprash|Haaröle, Shampoos, Masken|Pflege & Zahnpasta|Tulsi-Tees & Ghee|Vajradanti Kräuterzahnpasta|Ayurvedisches Haaröl' | split: '|' -%}
   {%- assign t_cats = 'Nach Kategorie einkaufen' -%}
-  {%- assign t_names = 'Ayurvedische Kosmetik,Zahnpasta,Haarpflege,Tulsi & Ayurveda-Tees,Ayurveda & Wellness,Räucherwerk & Raumduft' | split: ',' -%}
+  {%- assign t_names = 'Indische Lebensmittel & Reis,Ayurvedische Kosmetik,Haarpflege,Zahnpasta,Tulsi- & Ayurveda-Tees,Ayurveda & Wellness,Räucherwerk & Raumduft,Wohnen & Lifestyle' | split: ',' -%}
   {%- assign t_faq = 'Häufige Fragen' -%}{%- assign t_contact = 'Zum Kontakt' -%}
   {%- capture q1 -%}Sind die Produkte original?{%- endcapture -%}
   {%- capture a1 -%}Ja. Wir verkaufen Originalprodukte von Dabur, Vatika, Himalaya, Organic India, Vicco und weiteren Marken in Originalverpackung, versandt aus Polen.{%- endcapture -%}
@@ -56,7 +56,7 @@
   {%- capture a4 -%}Ja – wir beliefern Unternehmen in Polen und anderen EU-Ländern. Senden Sie eine Großhandelsanfrage; Preise, Mengen, Verfügbarkeit und Lieferung bestätigen wir für Ihre Bestellung.{%- endcapture -%}
 {%- else -%}
   {%- assign t_h1 = 'Kosmetyki ajurwedyjskie i indyjskie z dostawą w całej Polsce' -%}
-  {%- assign t_lead = 'Oryginalne Dabur, Vatika, Himalaya i Organic India – pasty do zębów, olejki do włosów, szampony, herbaty i Chyawanprash. Naturalne składniki i tradycyjne receptury.' -%}
+  {%- assign t_lead = 'Indyjska żywność, kosmetyki i produkty ajurwedyjskie: oryginalne Dabur, Vatika, Himalaya, Organic India i ryż Annam – wysyłka z Polski.' -%}
   {%- assign t_btn1 = 'Zobacz bestsellery' -%}{%- assign t_btn2 = 'Kosmetyki ajurwedyjskie' -%}
   {%- assign t_b2bcta = 'Hurt dla firm z Europy – załóż konto B2B' -%}
   {%- assign t_offer = '🎁 <strong>-10%</strong> na pierwsze zamówienie z kodem <strong>WELCOME10</strong>' -%}
@@ -68,7 +68,7 @@
   {%- assign t_brands = 'Kupuj według marki' -%}{%- assign t_see = 'Zobacz' -%}
   {%- assign t_tags = 'Pasty do zębów i Chyawanprash|Olejki, szampony, maski|Pielęgnacja i pasty do zębów|Herbaty Tulsi i ghee|Ziołowa pasta Vajradanti|Ajurwedyjski olejek do włosów' | split: '|' -%}
   {%- assign t_cats = 'Kupuj według kategorii' -%}
-  {%- assign t_names = 'Kosmetyki ajurwedyjskie,Pasty do zębów,Pielęgnacja włosów,Herbaty i Tulsi,Ajurweda i zdrowie,Kadzidła i zapachy' | split: ',' -%}
+  {%- assign t_names = 'Indyjska żywność i ryż,Kosmetyki ajurwedyjskie,Pielęgnacja włosów,Pasty do zębów,Herbaty i Tulsi,Ajurweda i zdrowie,Kadzidła i zapachy,Dom i styl życia' | split: ',' -%}
   {%- assign t_faq = 'Najczęstsze pytania' -%}{%- assign t_contact = 'Przejdź do kontaktu' -%}
   {%- capture q1 -%}Czy produkty są oryginalne?{%- endcapture -%}
   {%- capture a1 -%}Tak. Sprzedajemy oryginalne produkty Dabur, Vatika, Himalaya, Organic India, Vicco i innych marek, w fabrycznych opakowaniach, z wysyłką z Polski.{%- endcapture -%}
@@ -137,7 +137,7 @@
               {%- assign m10 = n | modulo: 10 -%}{%- assign m100 = n | modulo: 100 -%}{%- assign word = 'produktów' -%}
               {%- if n == 1 -%}{%- assign word = 'produkt' -%}{%- elsif m10 >= 2 and m10 <= 4 -%}{%- unless m100 >= 12 and m100 <= 14 -%}{%- assign word = 'produkty' -%}{%- endunless -%}{%- endif -%}
           {%- endcase -%}
-          {%- assign t = forloop.index0 | modulo: 6 -%}
+          {%- assign t = forloop.index0 | modulo: 8 -%}
           <a class="jpm-cat" href="{{ c.url }}" style="--tint: {{ jpm_tints[t] }}">
             <span class="jpm-cat__img">{%- if img -%}{{ img | image_url: width: 500 | image_tag: loading: 'lazy', widths: '250, 400, 500', sizes: '(min-width: 990px) 16vw, 45vw', alt: '' }}{%- endif -%}</span>
             <span class="jpm-cat__name">{{ t_names[forloop.index0] }}</span>
@@ -229,7 +229,7 @@
   .jpm-bcard__name { font-family: var(--font-heading--family, inherit); font-weight: 700; font-size: 1.2rem; color: var(--jpm-forest); }
   .jpm-bcard__tag { font-size: 0.82rem; color: var(--jpm-muted); line-height: 1.3; min-height: 2.6em; }
   .jpm-bcard__cta { margin-top: 6px; font-size: 0.85rem; font-weight: 700; color: #8a5f14; }
-  .jpm-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .jpm-cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
   .jpm-cat { display: grid; text-decoration: none; background: var(--tint); border-radius: 18px; padding: 18px 18px 20px; transition: box-shadow .2s ease; }
   .jpm-cat:hover { box-shadow: inset 0 0 0 2px var(--jpm-forest); }
   .jpm-cat__img { display: block; aspect-ratio: 4 / 3; margin-bottom: 14px; mix-blend-mode: multiply; }
