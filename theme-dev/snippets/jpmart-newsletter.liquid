@@ -1,0 +1,64 @@
+{%- liquid
+  case request.locale.iso_code
+    when 'en'
+      assign n_h = 'Join the JP MART newsletter'
+      assign n_t = 'New arrivals, rice and grocery restocks and special offers. No spam – unsubscribe in one click.'
+      assign n_l = 'Email address'
+      assign n_b = 'Subscribe'
+      assign n_c1 = 'I agree to receive marketing emails from JP MART (JP GROUP EUROPE Sp. z o.o.). I can unsubscribe at any time. See our'
+      assign n_c2 = 'privacy policy'
+      assign n_ok = 'Thank you! You are subscribed.'
+    when 'de'
+      assign n_h = 'JP MART Newsletter'
+      assign n_t = 'Neuheiten, Nachschub bei Reis und Lebensmitteln und Angebote. Kein Spam – Abmeldung mit einem Klick.'
+      assign n_l = 'E-Mail-Adresse'
+      assign n_b = 'Anmelden'
+      assign n_c1 = 'Ich willige ein, Marketing-E-Mails von JP MART (JP GROUP EUROPE Sp. z o.o.) zu erhalten. Ich kann mich jederzeit abmelden. Siehe'
+      assign n_c2 = 'Datenschutzerklärung'
+      assign n_ok = 'Vielen Dank! Sie sind angemeldet.'
+    else
+      assign n_h = 'Newsletter JP MART'
+      assign n_t = 'Nowości, uzupełnienia ryżu i produktów spożywczych oraz oferty specjalne. Bez spamu – rezygnacja jednym kliknięciem.'
+      assign n_l = 'Adres e-mail'
+      assign n_b = 'Zapisz się'
+      assign n_c1 = 'Wyrażam zgodę na otrzymywanie wiadomości marketingowych e-mail od JP MART (JP GROUP EUROPE Sp. z o.o.). Mogę się wypisać w dowolnym momencie. Zobacz'
+      assign n_c2 = 'politykę prywatności'
+      assign n_ok = 'Dziękujemy! Zapisaliśmy Twój adres.'
+  endcase
+-%}
+<div class="jpn" id="jp-newsletter">
+  <h2 class="jpn__h">{{ n_h }}</h2>
+  <p class="jpn__t">{{ n_t }}</p>
+  {%- form 'customer', id: 'jpm-newsletter', class: 'jpn__form' -%}
+    {%- if form.posted_successfully? -%}
+      <p class="jpn__ok" role="status">✅ {{ n_ok }}</p>
+    {%- else -%}
+      {%- if form.errors -%}<p class="jpn__err" role="alert">{{ form.errors | default_errors }}</p>{%- endif -%}
+      <input type="hidden" name="contact[tags]" value="newsletter, newsletter-lang-{{ request.locale.iso_code }}">
+      <div class="jpn__row">
+        <label class="jpn__sr" for="jpn-email">{{ n_l }}</label>
+        <input id="jpn-email" class="jpn__in" type="email" name="contact[email]" required autocomplete="email" inputmode="email" placeholder="{{ n_l }}" value="{{ form.email }}">
+        <button type="submit" class="jpn__btn">{{ n_b }}</button>
+      </div>
+      <label class="jpn__chk"><input type="checkbox" name="jpn_consent" value="1" required> <span>{{ n_c1 }} <a href="/policies/privacy-policy" target="_blank" rel="noopener">{{ n_c2 }}</a>.</span></label>
+    {%- endif -%}
+  {%- endform -%}
+</div>
+<style>
+  .jpn { background: #f6f2e8; color: #1f2933; border: 1px solid #e6dfd0; border-radius: 14px; padding: 20px 22px; max-width: 520px; font-size: 0.95rem; }
+  .jpn__h { margin: 0 0 6px; font-size: 1.25rem; color: #173f2d; line-height: 1.2; }
+  .jpn__t { margin: 0 0 14px; color: #4b5650; line-height: 1.5; }
+  .jpn__row { display: flex; gap: 8px; }
+  .jpn__in { flex: 1; min-width: 0; min-height: 48px; padding: 0 14px; border: 1px solid #cfc7b4; border-radius: 10px; background: #fff; color: #1f2933; font-size: 16px; }
+  .jpn__in:focus-visible { outline: 3px solid #c8922f; outline-offset: 1px; }
+  .jpn__btn { min-height: 48px; padding: 0 22px; border: 0; border-radius: 10px; background: #173f2d; color: #fff; font-size: 15px; font-weight: 700; cursor: pointer; }
+  .jpn__btn:hover { background: #0f2d20; }
+  .jpn__btn:focus-visible { outline: 3px solid #c8922f; outline-offset: 2px; }
+  .jpn__chk { display: flex; gap: 10px; align-items: flex-start; margin-top: 12px; font-size: 0.8rem; line-height: 1.45; color: #4b5650; }
+  .jpn__chk input { flex: 0 0 20px; width: 20px; height: 20px; margin-top: 1px; accent-color: #173f2d; }
+  .jpn__chk a { color: #173f2d; text-decoration: underline; }
+  .jpn__ok { margin: 0; padding: 12px 14px; background: #eaf1eb; border-radius: 10px; color: #173f2d; font-weight: 600; }
+  .jpn__err { margin: 0 0 10px; color: #9b1c1c; }
+  .jpn__sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @media (max-width: 480px) { .jpn { padding: 16px; } .jpn__row { flex-direction: column; } .jpn__btn { width: 100%; } }
+</style>
